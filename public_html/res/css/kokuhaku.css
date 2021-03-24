@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+
+    background-color:black;
+    background-image:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(255, 255, 255, 1)),
+    url('../img/kkbSky.gif');
+    background-size:cover;
+    background-attachment:fixed;
+}
+
+.header {
+    /* padding-bottom:2em; */
+    /* background-color: black; */
+    background-image: url("https://piskel-imgstore-b.appspot.com/img/7e556173-5502-11eb-b518-b72c821a7f04.gif");
+    background-size: contain;
+    border-bottom: solid 2px white;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+marquee{
+  color:#ea00d9;
+  height:24pt;
+  font-size:24pt;
+  font-style:italic;
+  font-family: 'VT323', monospace;
+  transition: 0.1s;
+}
+marquee:hover{
+  color:#0abdc6;
+  font-size:25pt;
+}
+
+.honeymoon {
+  font-family: 'VT323', monospace;
+  font-size:45pt;
+  color:#ba3838;
+  text-align:center;
+  text-shadow:5px 0px 1px white;
+  transition:0.5s;
+  letter-spacing:2px;
+}
+.honeymoon span{
+  font-size:30pt;
+  text-shadow:1px 0px 1px white;
+  border: 2px solid #ba3838;
+  box-shadow:1px 0px 1px white;
+  vertical-align: 20%;
+  margin-right: 10px;
+  /* display:none; */
+}
+
+.body {
+  background-color: rgba(0, 0, 0, 0.9);
+  /* background-image: url('res/img/miniwaSpace.png'); */
+  position:static;
+  height:30em;
+  margin:0 0.5em 10px;
+  padding:10px 20px 10px;
+  border: 2px solid white;
+  overflow:auto;
+  box-shadow:0 0 100px #30D5C8;
+}
+
+@keyframes flashing {
+  0%{
+    /* width:0%; */
+    height:0%;
+    background-color: #FFB000;
+  }
+  50% {
+    background-color: white;
+  }
+  100% {
+    background-color: #241900;
+    height:175px;
+  }
+}
+#kokuhakuBox{
+  /* padding-left: 5px; */
+  background-color: #241900;
+  animation: flashing 1s;
+  margin:10px 0 0;
+  border:2px solid white;
+  overflow:auto;
+  height:175px;
+  width:100%;
+}
+
+#kokuhakuText {
+  float:bottom;
+  position:relative;
+  color:#FFB000;
+  font-family: 'VT323', monospace;
+  font-size:12pt;
+  text-shadow: 0 0 5px #FFB000;
+
+}
+
+#input{
+  /* width:100%; */
+  outline:none;
+  color:white;
+  font-family:'VT323', monospace;
+  font-size:12pt;
+  resize: none;
+  background-color: black;
+  margin:15px 0px 0px;
+  border:2px solid white;
+  overflow:hidden;
+  height:12pt;
+  width:100%;
+
+}
+
+
+/* from iteration.css */
+#next {
+    font-family: 'VT323', monospace;
+    border:none;
+    color:white;
+    background-color: inherit;
+    font-size:24pt;
+    text-align: center;
+}
+
+#next:hover {
+    color:yellow;
+    border-color: yellow;
+}
+
+@media only screen and (min-width: 768px) {
+  .body{
+    /* height:100em; */
+    margin:0 16% 1em;
+    /* width:50%; */
+  }
+
+  @keyframes expand {
+    0%{
+      letter-spacing: 0px;
+      opacity:0;
+    }
+    100%{
+      letter-spacing: 40px;
+    }
+  }
+  .honeymoon {
+    animation: expand 4s;
+    font-size:64pt;
+    letter-spacing: 40px;
+    text-align: center;
+  }
+  .honeymoon span{
+    font-size: inherit;
+    border:inherit;
+    box-shadow: inherit;
+    text-shadow: inherit;
+    vertical-align:baseline;
+    display:inline-block;
+  }
+}

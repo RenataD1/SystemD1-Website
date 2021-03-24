@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Terminal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=VT323" rel="stylesheet">
+    <link rel="stylesheet" href="res/css/kokuhaku.css">
+    <link rel="stylesheet" href="res/css/home.css">
+  </head>
+
+  <body>
+
+    <div id='bg2'></div>
+    <div class="header">
+      <marquee id="marquee" scrollamount="8">Welcome to Terminal Kokuhaku! To start, type 'help'. </marquee>
+    </div>
+    <h1 class="honeymoon"><span>TEMRINAL</span>告白</h1>
+
+    <div class="body">
+
+      <div id="kokuhakuBox">
+        <p id="kokuhakuText">
+        </p>
+      </div>
+      <div id="kokuhakuInput">
+        <p id="kokuhakuText">
+        </p>
+
+        <textarea id="input" type="text"></textarea>
+        <button onclick = "terminal(document.getElementById('input').value)" id="next">ENTER ></button>
+      </div>
+      <!--Removes Banner-->
+      <script src="https://helpdillon.000webhostapp.com/removeBanner.js"></script>
+
+      <script src="../res/js/iteration.js"></script>
+
+    </div>
+    <div class="body">
+      <h2>Patch Notes:</h2>
+    </div>
+
+
+    <script src="https://helpdillon.000webhostapp.com/removeBanner.js"></script>
+    <script src="res/js/kokuhaku.js"></script>
+
+  </body>
+
+</html>

@@ -1,0 +1,125 @@
+
+  * {
+      margin: 0;
+      padding: 0;
+  }
+
+  body {
+      background-color:black;
+      /* background-image: url("https://i.pinimg.com/originals/ba/b6/08/bab6083d2b470bf80d99ac49c2b331a5.gif"); */
+      /*background-size: cover;*/
+  }
+
+  .header {
+      padding-bottom:2em;
+      width: 100%;
+  }
+
+  .imagebox {
+      padding:2em 2em 2em;
+  }
+
+  .dialogue {
+      margin:auto;
+      padding:0 2em 0;
+  }
+
+  .buttons {
+      padding:2em 2em 2em;
+  }
+
+  #first-marquee {
+      visibility:visible;
+      position:absolute;
+      font-family: 'VT323', monospace;
+      font-size:24pt;
+      font-style:italic;
+      color:#ea00d9;
+      transform: rotate(0deg);
+
+  }
+  #first-marquee:hover {
+      color:#0abdc6;
+      font-size:30pt;
+  }
+
+  #room {
+      z-index:2;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      max-width:100%;
+
+  }
+
+  #window {
+      z-index:1;
+      position:absolute;
+      border: 2px solid white;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      max-width:82%;
+  }
+
+  #messageBox {
+      padding:1em 1em 1em;
+      border: 2px solid white;
+      text-align:left;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+
+      color:white;
+      font-family: 'VT323', monospace;
+      font-size:24pt;
+  }
+
+  #next {
+      font-family: 'VT323', monospace;
+      border:none;
+      display: block;
+      margin-left: auto;
+      text-align:center;
+      color:white;
+      background-color: black;
+      font-size:24pt;
+  }
+
+  #next:hover {
+      color:yellow;
+      border-color: yellow;
+  }
+
+  @media only screen and (min-width: 768px) {
+      body {
+          background-color:black;
+      }
+
+      .header {
+          padding-bottom:2em;
+          width: 100%;
+      }
+
+      .imagebox {
+          vertical-align:center;
+          width:30%;
+          margin:auto;
+      }
+
+      .dialogue {
+          width:30%;
+          margin:auto;
+
+      }
+
+      .buttons {
+          width:30%;
+          margin:auto;
+      }
+
+      #window {
+          position:absolute;
+          width:29.8%;
+      }
+  }

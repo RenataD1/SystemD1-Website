@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Human Survey</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="icon" href="../res/img/d_logo.png"></link>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=VT323" rel="stylesheet">
+        <link rel="stylesheet" href="../res/css/home.css">
+    </head>
+    <body id="form-body">
+        <div id="header">
+            <img class="title-bg" src="../res/img/title-background.png">
+            <div id="title-div">
+
+                <h1 id="title">human survey</h1>
+            </div>
+
+            <div id="scrolling-banner">
+                <!-- <hr> -->
+                <marquee id="first-marquee">
+                    Hello my name is forrest and I've got something to say, I hope you have a really really really nice day!
+                </marquee>
+                <marquee scrollamount="8" id="second-marquee">
+                    The end is never the end is never the end is never the end is never the end is never the end is never the end is never the end is never the end is never the end is never the end is never the
+                </marquee>
+
+            </div>
+        </div>
+
+        <div id="main-body">
+
+          <!-- FORM SECTION -->
+          <div class="CONTENT-CLOSED"id="CONTENT-OPENED">
+            <div class="sectionable-block">
+              <div class="text" style="background-color:#c5b358">
+
+                      <h>EMAIL FORM</h>
+                      <form id="myForm">
+                        <input type="hidden" id="time" name="time" />
+                        <p id="timeDisplay"></p>
+
+                        <p>
+                          <label>Full Name</label>
+                          <input name="full_name" />
+                        </p>
+
+                        <br>
+
+                        <p>
+                          <label>Email</label>
+                          <input name="email" />
+                        </p>
+
+                        <br/>
+
+                        <p><label>Age</label></p>
+                        <p>
+                          <input type="radio" id="age" name="age" value="<18" /> under 18<br/>
+                          <input type="radio" id="age" name="age" value="18+" /> 18+<br/>
+                        </p>
+                        <br/>
+
+
+                        <p>
+                          <label>Message</label>
+                        </p>
+                        <p>
+                          <textarea name="message" style="resize:none;"></textarea>
+                        </p>
+                        <br/>
+
+                        <br/>
+                      </form>
+                      <button onclick="SubForm('https://api.apispreadsheets.com/data/8156/')">Submit</button>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="sectionable-block">
+              <div class="text" style="background-color:#c5b358">
+
+                      <h>OTHER FORMS</h>
+                      <p>Submit to Community Wall:</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+        <footer>
+            <hr>
+              v1.2 "Present day. Present time."
+            </hr>
+        </footer>
+        <script src="../res/js/home.js"></script>
+        <script
+          src="https://code.jquery.com/jquery-3.4.1.js"
+          integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+          crossorigin="anonymous"></script>
+        <script src="../res/js/spreadsheet-form.js">
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,282 @@
+* {
+  font-family: 'VT323', monospace;
+  margin: 0;
+  padding: 0;
+}
+html {
+  max-height:100%;
+  background-color:black;
+  /* scroll-behavior: smooth; */
+
+}
+body {
+  /* height:100%; */
+  padding-bottom:200px;
+}
+#home-body{
+
+  /* background-image: url("../img/space.gif"); */
+  background-attachment: fixed;
+  background-size:cover;
+}
+#form-body{
+  background-image: url("../img/miniwaSpace.png");
+  background-attachment: fixed;
+  background-size:cover;
+
+}
+
+img {
+  width:100%;
+}
+hr {
+    color:white;
+}
+
+/* Fixed Header */
+#header {
+  position:fixed;
+  z-index:10;
+}
+#title-div {
+    position:absolute;
+    text-shadow: 0 0 7px white;
+    /* background-color:black; */
+
+    font-weight:normal;
+    font-family: 'VT323', monospace;
+    font-size:25px;
+    /* font-size:15pt; */
+    text-align:left;
+    margin:0 10px 0;
+    color:white;
+    z-index:12;
+}
+
+.title-bg{
+  position:absolute;
+  /* left:-25px; */
+  top:0%;
+  width:280px;
+  height:57px;
+  stretch:20%;
+  z-index:11;
+}
+
+#scrolling-banner {
+    background-image: url("https://piskel-imgstore-b.appspot.com/img/7e556173-5502-11eb-b518-b72c821a7f04.gif");
+    background-size: 2em;
+    /*padding-bottom:0;*/
+    width: 100%;
+    /*background-color:red;*/
+    z-index:10;
+    border-top:solid 2px white;
+    border-bottom:solid 3px gray;
+}
+
+#first-marquee {
+    font-family: 'VT323', monospace;
+    font-size:20pt;
+    font-style:italic;
+    color:#ea00d9;
+    transform: rotate(0deg);
+    transition:0.1s;
+}
+#first-marquee:hover {
+    color:#0abdc6;
+    font-size:25pt;
+}
+#second-marquee {
+    font-family: 'VT323', monospace;
+    font-size:14pt;
+    color:white;
+
+}
+nav {
+  position:relative;
+}
+.nav-tab{
+  float:left;
+  /* background:red; */
+  width:20%;
+  text-align:center;
+}
+a.nav-text{
+  width:20%;
+  position:absolute;
+  color:white;
+  text-decoration:none;
+  font-size:15px;
+}
+.nav-image {
+}
+
+#main-body{
+    padding:80px 0 0;
+}
+
+
+footer {
+    font-style:italic;
+    background-color:black;
+    text-align:right;
+    color:white;
+    bottom:0;
+    position:fixed;
+    width:100%;
+}
+
+#CONTENT-OPENED{
+  display:block;
+}
+.CONTENT-CLOSED{
+  display:none;
+  height:100%;
+}
+.CONTENT-CLOSED:nth-child(5){
+  /* background-color:red; */
+  background-image:url("res/img/floating.gif");
+  /* background-size: contain; */
+}
+
+
+#status{
+    background-image: url("res/img/floating.gif");
+    background-size:cover;
+    background-color:#060431;
+    /*border-right:solid 1px white;*/
+    text-shadow: 0 0 5px black;
+    color:green;
+    font-size:24pt;
+    position:relative;
+    /* top:50px; */
+}
+
+
+.sectionable-block {
+    padding:2em 2em 2em;
+    /* background-color:black; */
+    /* background-image: url("res/images/.gif"); */
+    background-size:cover;
+    background-attachment:fixed;
+}
+
+.text {
+    padding: 0 1em 0;
+    margin-bottom:1em;
+    /*float:left;*/
+    background-color:#060232;
+    max-width:100%;
+    box-shadow:3px 3px 0px #ea007f;
+}
+.text h {
+    font-size:40pt;
+    color:white;
+    text-shadow:2px 2px 0px #ea007f;
+}
+.text p {
+    font-size:20pt;
+    color:white;
+}
+
+
+
+#video-player {
+    padding:6px 5px 5px;
+    position:fixed;
+    bottom:20px;
+}
+#video-banner {
+    position:absolute;
+    left:136px;
+    display:block;
+    width:212px;
+    height:70px;
+    z-index:0;
+}
+#video-sign {
+
+    width:205px;
+    text-shadow: 0 0 7px #ea007f;
+    left:140px;
+    position:absolute;
+    font-weight:normal;
+    font-family: 'VT323', monospace;
+    font-size:50pt;
+    color:#ea007f;
+    z-index:1;
+}
+#video-player iframe {
+    border:solid 1px #ea007f;
+    display:block;
+    width:124px;
+    height:68px;
+}
+
+.collapsible {
+    border-top:solid 2px white;
+    border-left:hidden;
+    border-right:hidden;
+    border-bottom:hidden;
+    transition:0.1s;
+    margin:0 0 0.25em;
+    text-align:left;
+    font-size:40pt;
+    color:white;
+    padding: 0 0.30em 0;
+    /*float:left;*/
+    background-color:#060232;
+    width:100%;
+    box-shadow:3px 3px 0px #FFFFFF;
+}
+.collapsible:hover{
+    /* box-shadow:0 0 10px white; */
+    box-shadow:3px 3px 0px #ea007f;
+}
+.collapsible:after {
+  content: '\002B';
+
+}
+
+.active:after {
+  content: "\2212";
+
+}
+button:focus {
+    outline:0;
+    color:#ea00d9;
+}
+
+#calendar {
+  border-width: 0;
+  width:100%;
+  height:100%;
+}
+#google-form{
+  /* background-color:red; */
+  background-image:url("res/img/miniwaSpace.png");
+  width:100%;
+  height:500px;
+}
+/* #enochs{
+  width:100%;
+  height:100%;
+} */
+
+.content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  box-shadow:3px 3px 0px #ea007f;
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+
+    }
+
+    .banner {
+
+    }
+
+}
