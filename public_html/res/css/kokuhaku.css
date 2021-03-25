@@ -15,8 +15,6 @@ body {
 }
 
 .header {
-    /* padding-bottom:2em; */
-    /* background-color: black; */
     background-image: url("https://piskel-imgstore-b.appspot.com/img/7e556173-5502-11eb-b518-b72c821a7f04.gif");
     background-size: contain;
     border-bottom: solid 2px white;
@@ -109,7 +107,7 @@ marquee:hover{
   color:white;
   font-family:'VT323', monospace;
   font-size:12pt;
-  resize: none;
+  /* resize: none; */
   background-color: black;
   margin:15px 0px 0px;
   border:2px solid white;

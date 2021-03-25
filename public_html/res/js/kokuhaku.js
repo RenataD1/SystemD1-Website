@@ -1,9 +1,9 @@
 // Marquee Time
-var marquee = document.getElementById("marquee").innerHTML + " // " + Date() + " // ";
-document.getElementById("marquee").innerHTML = "";
-for(var i = 0; i < 100; i++){
-  document.getElementById("marquee").innerHTML+=marquee;
-}
+// var marquee = document.getElementById("marquee").innerHTML + " // " + Date() + " // ";
+// document.getElementById("marquee").innerHTML = "";
+// for(var i = 0; i < 100; i++){
+//   document.getElementById("marquee").innerHTML+=marquee;
+// }
 // var x = setInterval(function(){
     // document.title = Date();
     // document.getElementById("marquee").innerHTML += marquee;
@@ -11,18 +11,11 @@ for(var i = 0; i < 100; i++){
 // },6000);
 
 
+// document.getElementById("next").addEventListener('click', terminal(document.getElementById('input').value));
 // Event listeners
-var button = document.getElementById("kokuhakuInput");
-document.getElementById("next").addEventListener('click', terminal(document.getElementById('input').value));
-button.addEventListener("keyup", function(event) {
-  // Number 13 is the "Enter" key on the keyboard
+var prompt = document.getElementById("input");
+prompt.addEventListener("keypress", function(event) {
   if (event.keyCode === 13) {
-    // Cancel the default action, if needed
-    event.preventDefault();
-    // Trigger the button element with a click
-
-    // document.getElementById("next").click();
-    console.log(document.getElementById('input').value);
     terminal(document.getElementById('input').value);
   }
 });
@@ -31,17 +24,20 @@ button.addEventListener("keyup", function(event) {
 function terminal(input){
   // switch(input){
   //   case "open0":
+  //     console.log(1);
   //     loadMessage("replaying iteration. . . . . . . . . . . . . . .");
   //     window.open("iteration/0.html");
   //     break;
   //   case "clear":
-  //     console.log("it's clear");
+  //     console.log(document.getElementById("kokuhakuText").innerHTML);
+  //     document.getElementById("kokuhakuText").innerHTML = "";
   //     break;
   //   default:
+  //     // console.log(3);
   //     loadMessage(input);
   // }
   // console.log(input);
-  // loadMessage(input);
+
   if (input == "open0"){
     loadMessage("replaying iteration. . . . . . . . . . . . . . .");
     window.open("iteration/0.html");
@@ -66,6 +62,7 @@ function loadMessage(msg) {
 // typewriter effect
 function typeLine() {
   if (i < message.length) {
+      prompt.style.disabled = "yes";
       document.getElementById("next").style.visibility = "hidden";
       // document.getElementById("kokuhakuText").innerHTML += dialogue[lineNum].charAt(i);
 
@@ -79,6 +76,7 @@ function typeLine() {
       }
 
       if (i == message.length) {
+          prompt.style.visibility = "visible";
           document.getElementById("next").style.visibility = "visible";
           document.getElementById("kokuhakuText").innerHTML += "<br>";
 
@@ -87,9 +85,5 @@ function typeLine() {
   }
 }
 
-// executed first
+// terminal startup
 loadMessage("Last Update: Wed Mar 17 23:26:27 // Kokuhaku™");
-// loadMessage("Unlink the world.");
-// loadMessage("Unlock the rest.");
-
-// typeLine("Hello world.");
