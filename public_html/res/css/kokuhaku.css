@@ -59,7 +59,7 @@ marquee:hover{
   background-color: rgba(0, 0, 0, 0.9);
   /* background-image: url('res/img/miniwaSpace.png'); */
   position:static;
-  height:30em;
+  /* height:30em; */
   margin:0 0.5em 10px;
   padding:10px 20px 10px;
   border: 2px solid white;
@@ -151,7 +151,28 @@ marquee:hover{
     color:yellow;
     border-color: yellow;
 }
-
+#back{
+  position:relative;
+  top:100%;
+  float:right;
+  text-decoration: none;
+}
+#back:hover{
+  color:yellow;
+  text-decoration: underline;
+}
+a {
+  color:white;
+}
+footer {
+    font-style:italic;
+    background-color:black;
+    text-align:right;
+    color:white;
+    bottom:0;
+    position:fixed;
+    width:100%;
+}
 @media only screen and (min-width: 768px) {
   .body{
     /* height:100em; */
@@ -182,16 +203,5 @@ marquee:hover{
     vertical-align:baseline;
     display:inline-block;
   }
-  a {
-    color:white;
-  }
-  footer {
-      font-style:italic;
-      background-color:black;
-      text-align:right;
-      color:white;
-      bottom:0;
-      position:fixed;
-      width:100%;
-  }
+
 }
