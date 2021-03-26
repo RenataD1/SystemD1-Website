@@ -40,13 +40,11 @@ function terminal(input){
 
     case "play 0":
         // document.getElementById("kokuhakuText").innerHTML += "<img id='kokuhakuImg'src='res/sprites/circle.gif'>";
-
         if (window.confirm("You are about to enter an outdated conversation with Dillon Hayes. Is that ok?")){
           setTimeout("window.open('iteration/0.html')", 1000);
           loadMessage(input + "/nloading recorded iteration.........");
-
         }else{
-          loadMessage("iteration cancelled");
+          loadMessage("cancel/niteration ended");
         }
 
         break;
@@ -76,7 +74,7 @@ function typeLine() {
 
   if (i < message.length) {
       prompt.style.disabled = "yes";
-      document.getElementById("next").style.visibility = "hidden";
+      // document.getElementById("next").style.visibility = "hidden";
       // document.getElementById("kokuhakuText").innerHTML += dialogue[lineNum].charAt(i);
 
       // linebreak check
@@ -92,8 +90,8 @@ function typeLine() {
 
       if (i == message.length) {
           prompt.style.visibility = "visible";
-          document.getElementById("next").style.visibility = "visible";
-          document.getElementById("kokuhakuText").innerHTML += "<span class='blink'>|</span><br>";
+          // document.getElementById("next").style.visibility = "visible";
+          document.getElementById("kokuhakuText").innerHTML += "<br><span class='blink'>|</span>";
       }
       setTimeout(typeLine, 20);
   }
