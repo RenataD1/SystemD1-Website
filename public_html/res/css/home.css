@@ -15,7 +15,7 @@ body {
 }
 #home-body{
 
-  /* background-image: url("../img/space.gif"); */
+  background-image: url("../img/construction.webp");
   background-attachment: fixed;
   background-size:cover;
 }
@@ -271,12 +271,34 @@ button:focus {
 }
 
 @media only screen and (min-width: 768px) {
-    body {
+  .CONTENT-CLOSED{
+    padding-top:55px;
+  }
+  #main-body{
+    padding:0px 0 200px;
+  }
+  .displayImg{
+    width:50%;
+    /* margin:0 auto 0; */
+    /* float:right; */
+  }
+  .sectionable-block{
+    /* background-color: red; */
+  }
+  #nav-bar{
+    position:relative;
+    left:60%;
+  }
+  .nav-tab{
+    /* float:right; */
+    max-width:8%;
 
-    }
 
-    .banner {
+  }
+  a.nav-text{
+    width:8%;
+    font-size:15px;
+  }
 
-    }
 
 }
