@@ -21,7 +21,7 @@ prompt.addEventListener("keypress", function(event) {
 // add commands here
 function terminal(input){
   document.getElementsByClassName("blink")[0].parentNode.removeChild(document.getElementsByClassName("blink")[0]);
-  document.getElementById("kokuhakuText").innerHTML += "D1: ";
+  // document.getElementById("kokuhakuText").innerHTML += "D1% ";
   switch(input){
 
     case "help":
@@ -40,9 +40,10 @@ function terminal(input){
 
     case "play 0":
         // document.getElementById("kokuhakuText").innerHTML += "<img id='kokuhakuImg'src='res/sprites/circle.gif'>";
-        if (window.confirm("You are about to enter an outdated conversation with Dillon Hayes. Is that ok?")){
+        loadMessage(input + "/nloading recorded iteration.........");
+        var ready = setTimeout("window.confirm('You are about to enter an outdated conversation with Dillon Hayes. Is that ok?')", 1000);
+        if (ready){
           setTimeout("window.open('iteration/0.html')", 1000);
-          loadMessage(input + "/nloading recorded iteration.........");
         }else{
           loadMessage("cancel/niteration ended");
         }
@@ -91,7 +92,7 @@ function typeLine() {
       if (i == message.length) {
           prompt.style.visibility = "visible";
           // document.getElementById("next").style.visibility = "visible";
-          document.getElementById("kokuhakuText").innerHTML += "<br><span class='blink'>|</span>";
+          document.getElementById("kokuhakuText").innerHTML += "<br>D1 ~ % <span class='blink'>|</span>";
       }
       setTimeout(typeLine, 20);
   }
