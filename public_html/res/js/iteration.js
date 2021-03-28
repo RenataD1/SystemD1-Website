@@ -1,15 +1,18 @@
 // Marquee Time
 var integer = 0;
 var glitch = "";
-
 document.getElementById("first-marquee").innerHTML = Date();
 var x = setInterval(function(){
     document.title = Date();
     document.getElementById("first-marquee").innerHTML = Date() + " what you are reading is not a mistake what you are reading is not a mistake  what you are reading is not a mistake  what you are reading is not a mistake  what you are reading is not a mistake  what you are reading is not a mistake what you are reading is not a mistake what you are reading is not a mistake  what you are reading is not a mistake  what you are reading is not a mistake  what you are reading is not a mistake  what you are reading is not a mistake what you are reading is not a mistake what you are reading is not a mistake  what you are reading is not a mistake  what you are reading is not a mistake  what you are reading is not a mistake  what you are reading is not a mistake what you are reading is not a mistake what you are reading is not a mistake  what you are reading is not a mistake  what you are reading is not a mistake  what you are reading is not a mistake  what you are reading is not a mistake what you are reading is not a mistake what you are reading is not a mistake  what you are reading is not a mistake  what you are reading is not a mistake  what you are reading is not a mistake  what you are reading is not a mistake ";
 },1000);
 
+// Script variable
 var lineNum = -1;
+
+// soundFX
 var talk = document.getElementById("soundFX");
+
 var currentMessage = document.getElementById("messageBox");
 
 // Script Arrays
