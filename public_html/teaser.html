@@ -1,0 +1,42 @@
+<!DOCTYPE html5>
+<head>
+  <link rel="stylesheet" href="teaser.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+
+  <link href="https://fonts.googleapis.com/css2?family=VT323" rel="stylesheet">
+  <style>
+    h1 {
+      font-family: 'VT323', monospace;
+      color:white;
+      position:absolute;
+    }
+    img{
+      width:50%;
+      -webkit-filter: drop-shadow(0px 0px 5px #FFFFFF);
+        /* filter: drop-shadow(5px 5px 5px #666666); */
+        animation: bloom 1.5s ease-in;
+    }
+    @keyframes bloom {
+      0%{
+        opacity:0;
+        -webkit-filter: drop-shadow(0px 0px 0px #000000);
+      }
+      70%{
+        opacity:1;
+      }
+      100%{
+
+        -webkit-filter: drop-shadow(0px 0px 5px #FFFFFF);
+      }
+    }
+
+  </style>
+</head>
+<body style="background-color:#00b140;">
+  <h1 id="logo"></h1>
+  <script>
+    document.getElementById("logo").innerHTML = "s y s t e m - d 1<br>a c o n c e p t ";
+  </script>
+
+  <!-- <img src="res/img/lbField.webp"> -->
+</body>
