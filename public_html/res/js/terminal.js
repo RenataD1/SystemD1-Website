@@ -10,6 +10,8 @@ prompt.addEventListener("keypress", function(event) {
   }
 });
 
+// terminal header
+var startMessage = "Last Update: Wed Mar 31 12:00:00 //a29rdWhha3U=\u2122";
 // add commands here
 function terminal(input){
   typeFX.play();
@@ -17,16 +19,16 @@ function terminal(input){
   document.getElementsByClassName("blink")[0].parentNode.removeChild(document.getElementsByClassName("blink")[0]);
   // document.getElementById("kokuhakuText").innerHTML += "D1% ";
   switch(input){
-    case "location":
-      loadMessage(input + "/nLife. Earth. 37.6902\xB0N 120.9355\xB0W/nLife. Earth. 37.6902\xB0N 120.9355\xB0W/nLife. Earth. 37.6902\xB0N 120.9355\xB0W/n 0\t0   0/n  0   0   /n   0   0/n0   0   0 /nhttps://www.google.com/maps/@37.7097763,-120.9368894,5816m/data=!3m1!1e3");
-      break;
-    case "concept":
-      var concept = "/nDog licks. Graffiti. Pink. Bug bike. Sirius. Lemon drops./nCrested snake. Orange sakura. Lightbulb. QR. Suoibem./nMebious. Honeymoon. Library. Apollo. Summer. Masaya./nSolvent. Soulshatter. Desperation. Terminal. LM-5. Blue./nConfession. Solve the Crescent. Answer the call. Open the casket./nRelink to sanity. Unlinked the world. Unlocked the rest./nSystem-d1. A concept.";
-      loadMessage(input + concept + concept + concept + concept);
-      break;
-    case "final":
-      loadMessage(input + "/n/nJames C. Enochs/n/nAugust 2021/n/nRecruiting now./n/n/n/n/n");
-      break;
+    // case "location":
+    //   loadMessage(input + "/nLife. Earth. 37.6902\xB0N 120.9355\xB0W/nLife. Earth. 37.6902\xB0N 120.9355\xB0W/nLife. Earth. 37.6902\xB0N 120.9355\xB0W/n 0\t0   0/n  0   0   /n   0   0/n0   0   0 /nhttps://www.google.com/maps/@37.7097763,-120.9368894,5816m/data=!3m1!1e3");
+    //   break;
+    // case "concept":
+    //   var concept = "/nDog licks. Graffiti. Pink. Bug bike. Sirius. Lemon drops./nCrested snake. Orange sakura. Lightbulb. QR. Suoibem./nMebious. Honeymoon. Library. Apollo. Summer. Masaya./nSolvent. Soulshatter. Desperation. Terminal. LM-5. Blue./nConfession. Solve the Crescent. Answer the call. Open the casket./nRelink to sanity. Unlinked the world. Unlocked the rest./nSystem-d1. A concept.";
+    //   loadMessage(input + concept + concept + concept + concept);
+    //   break;
+    // case "final":
+    //   loadMessage(input + "/n/nJames C. Enochs/n/nAugust 2021/n/nRecruiting now./n/n/n/n/n");
+    //   break;
     case "help":
       loadMessage(input + "/n/nCOMMANDS:/n/nnews - returns the local shenanigans/nclear - clears the terminal/nplay # - replays a previous iteration of Dillon Hayes/n");
       break;
@@ -37,13 +39,17 @@ function terminal(input){
 
     case "clear":
       document.getElementById("kokuhakuText").innerHTML = "";
-      loadMessage("Last Update: Wed Mar 17 23:26:27 // Kokuhaku™");
+      loadMessage("Last Update: Wed Mar 17 23:26:27 // a29rdWhha3U=\u2122");
       document.getElementById("input").value = "";
+      break;
+    case "refresh":
+      loadMessage("refreshing..............................");
+      setTimeout("window.location.reload()", 1000);
       break;
 
     case "play 0":
         // document.getElementById("kokuhakuText").innerHTML += "<img id='kokuhakuImg'src='res/sprites/circle.gif'>";
-        loadMessage(input + "/nloading recorded iteration.........");
+        loadMessage(input + "/nloading recorded iteration..........");
         var ready = setTimeout("window.confirm('You are about to enter an outdated conversation with Dillon Hayes. Is that ok?')", 1000);
         if (ready){
           setTimeout("window.open('iteration/0.html')", 1000);
@@ -106,4 +112,4 @@ function typeLine() {
 }
 
 // terminal startup
-loadMessage("Last Update: Wed Mar 31 12:00:00 //a29rdWhha3U=\u2122");
+loadMessage(startMessage);
