@@ -11,7 +11,13 @@
 
   <body>
     <div class="header">
-      <marquee id="marquee" scrollamount="8">Welcome to Terminal Kokuhaku! To start, type 'help'. </marquee>
+      <marquee id="pinkMarq" scrollamount="8">Welcome to Terminal Kokuhaku! To start, type 'help'. </marquee>
+      <script>
+          var marquee = document.getElementById("pinkMarq").innerHTML
+          for(var i = 0; i < 100; i++){
+            document.getElementById("pinkMarq").innerHTML+=marquee;
+          }
+      </script>
     </div>
     <h1 class="honeymoon"><span>TEMRINAL</span>告白</h1>
     <div class="body">
@@ -59,7 +65,7 @@
         </hr>
     </footer>
     <script src="res/js/removeBanner.js"></script>
-    <script src="res/js/kokuhaku.js"></script>
+    <!-- <script src="res/js/kokuhaku.js"></script> -->
     <script src="res/js/terminal.js"></script>
 
   </body>
