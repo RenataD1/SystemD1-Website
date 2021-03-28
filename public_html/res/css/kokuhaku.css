@@ -15,6 +15,9 @@ body {
 }
 
 .header {
+    /* top:0; */
+    /* position:fixed; */
+    z-index:10;
     background-image: url("https://piskel-imgstore-b.appspot.com/img/7e556173-5502-11eb-b518-b72c821a7f04.gif");
     background-size: contain;
     border-bottom: solid 2px white;
@@ -59,7 +62,7 @@ marquee:hover{
   background-color: rgba(0, 0, 0, 0.9);
   /* background-image: url('res/img/miniwaSpace.png'); */
   position:static;
-  /* height:30em; */
+  height:30em;
   margin:0 0.5em 10px;
   padding:10px 20px 10px;
   border: 2px solid white;
