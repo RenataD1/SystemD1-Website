@@ -20,12 +20,22 @@
             </div>
             <div id="scrolling-banner">
                 <!-- <hr> -->
-                <marquee id="first-marquee">
-                    Hello my name is forrest and I've got something to say, I hope you have a really really really nice day!
+                <marquee id="pinkMarq">
+                    pink marquee
                 </marquee>
-                <marquee scrollamount="8" id="second-marquee">
-                    The end is never the end is never the end is never the end is never the end is never the end is never the end is never the end is never the end is never the end is never the end is never the
+                <marquee scrollamount="8" id="whiteMarq">
+                    white marquee
                 </marquee>
+                <script>
+                    var marquee = document.getElementById("pinkMarq").innerHTML;
+                    var marquee2 = document.getElementById("whiteMarq").innerHTML;
+                    for(var i = 0; i < 100; i++){
+                      document.getElementById("pinkMarq").innerHTML+=marquee;
+                      document.getElementById("whiteMarq").innerHTML+=marquee2;
+
+                    }
+                </script>
+
 
             </div>
             <div id="nav-bar">

@@ -74,7 +74,7 @@ hr {
     border-bottom:solid 3px gray;
 }
 
-#first-marquee {
+#pinkMarq {
     font-family: 'VT323', monospace;
     font-size:20pt;
     font-style:italic;
@@ -82,11 +82,11 @@ hr {
     transform: rotate(0deg);
     transition:0.1s;
 }
-#first-marquee:hover {
+#pinkMarq:hover {
     color:#0abdc6;
     font-size:25pt;
 }
-#second-marquee {
+#whiteMarq {
     font-family: 'VT323', monospace;
     font-size:14pt;
     color:white;
