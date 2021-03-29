@@ -1,5 +1,5 @@
 * {
-  font-family: 'VT323', monospace;
+  /* font-family: 'manaspc', monospace; */
   margin: 0;
   padding: 0;
 }
@@ -37,12 +37,11 @@ hr {
 #header {
   position:fixed;
   z-index:10;
+  font-family: 'VT323', monospace;
 }
 #title-div {
     position:absolute;
     text-shadow: 0 0 7px white;
-    /* background-color:black; */
-
     font-weight:normal;
     font-family: 'VT323', monospace;
     font-size:25px;
@@ -162,20 +161,22 @@ footer {
 }
 
 .text {
-    padding: 0 1em 0;
+    padding: 1em 1em 1em;
     margin-bottom:1em;
     /*float:left;*/
     background-color:#060232;
     max-width:100%;
     box-shadow:3px 3px 0px #ea007f;
 }
-.text h {
+h {
+    font-family: 'manaspc', monospace;
     font-size:40pt;
     color:white;
     text-shadow:2px 2px 0px #ea007f;
 }
-.text p {
-    font-size:20pt;
+p {
+    font-family: 'webpixel';
+    font-size:15pt;
     color:white;
 }
 
@@ -214,7 +215,9 @@ footer {
 }
 
 .collapsible {
-    border-top:solid 2px white;
+    font-family: 'manaspc', monospace;
+    /* border-top:solid 2px white; */
+    border:none;
     border-left:hidden;
     border-right:hidden;
     border-bottom:hidden;
@@ -223,10 +226,9 @@ footer {
     text-align:left;
     font-size:40pt;
     color:white;
-    padding: 0 0.30em 0;
-    /*float:left;*/
+    padding: 10px 10px 10px;
     background-color:#060232;
-    width:100%;
+    /* width:100%; */
     box-shadow:3px 3px 0px #FFFFFF;
 }
 .collapsible:hover{
@@ -262,7 +264,12 @@ button:focus {
   width:100%;
   height:100%;
 } */
-
+#myForm, #myForm button{
+  font-family:'webpixel';
+}
+.submitBtn{
+  font-family:'webpixel';
+}
 .content {
   max-height: 0;
   overflow: hidden;
@@ -278,9 +285,10 @@ button:focus {
     padding:0px 0 200px;
   }
   .displayImg{
-    width:50%;
-    /* margin:0 auto 0; */
-    /* float:right; */
+    style="
+      width:45%;
+      float:right;
+    "
   }
   .sectionable-block{
     /* background-color: red; */

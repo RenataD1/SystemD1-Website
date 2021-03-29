@@ -6,10 +6,25 @@
 
         <link rel="icon" href="res/img/d_logo.png"></link>
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=VT323" rel="stylesheet">
+        <!-- <link href="https://fonts.googleapis.com/css2?family=VT323" rel="stylesheet"> -->
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="res/css/home.css">
 
         <script src="res/js/home.js" defer></script>
+        <style>
+          @font-face {
+            font-family:'VT323';
+            src:url('res/fonts/VT323.ttf');
+          }
+          @font-face {
+            font-family:'manaspc';
+            src:url('res/fonts/manaspc.ttf');
+          }
+          @font-face {
+            font-family:'webpixel';
+            src:url('res/fonts/webpixel.otf');
+          }
+        </style>
     </head>
     <body id="home-body">
         <div id="header">
@@ -19,7 +34,6 @@
                 <h1 id="title">Dillon Hayes</h1>
             </div>
             <div id="scrolling-banner">
-                <!-- <hr> -->
                 <marquee id="pinkMarq">
                     pink marquee
                 </marquee>
@@ -39,7 +53,6 @@
 
             </div>
             <div id="nav-bar">
-              <!-- <hr> -->
               <nav>
                 <!-- ABOUT -->
                 <div class="nav-tab" onclick="goToTab(0)">
@@ -103,17 +116,25 @@
         </div>
 
         <div id="main-body">
-
-          <hr>
           <!-- ABOUT SECTION -->
+
           <div class="CONTENT-CLOSED"id="CONTENT-OPENED">
+            <div class="sectionable-block">
+                <div class="text">
+                    <h>ABOUT</h>
+                    <p>The Wiki now has translation options. Simply log in and press "Translate this page"!
+                      I'll reward people who translate a lot of content a lot of disk space, as thanks for putting so much work into the Project!
+                      View the Wiki here: wiki.systemspace.link
+                      View pages needing translation here: Language Stats (enter a language into "Language code" to see its status)
+                      Thank you very much!
+                    </p>
+                </div>
+            </div>
             <div id="status"><h >WEEK: 0</h></div>
 
-            <hr>
             <div class="sectionable-block">
               <img class="displayImg"src="res/img/d_logo.png">
             </div>
-            <hr>
             <div class="sectionable-block" style="background: rgba(234, 0, 217, 0.2);" >
                 <!--ABOUT-->
                 <button class="collapsible">ABOUT </button>
@@ -134,20 +155,7 @@
                 </div>
 
             </div>
-            <hr>
-            <div class="sectionable-block">
-                <hr>
-                <div class="text">
-                    <h>Help Dillon</h>
-                    <p></p>
-                </div>
-                <hr>
-                <div class="text">
-                    <h>ABOUT</h>
-                    <p>This the landing page for the d1_h85.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div>
-            </div>
-            <hr>
+
           </div>
           <!-- STATUS SECTION -->
           <div class="CONTENT-CLOSED">
@@ -285,7 +293,7 @@
 
                     <br/>
                   </form>
-                  <button onclick="SubForm('https://api.apispreadsheets.com/data/8156/')">Submit</button>
+                  <button class="submitBtn" onclick="SubForm('https://api.apispreadsheets.com/data/8156/')">Submit</button>
                 </form>
               </div>
             </div>
