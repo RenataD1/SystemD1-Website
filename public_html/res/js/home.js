@@ -6,13 +6,14 @@ window.onload = () => {
 
 // Tab System
 function goToTab(num){
-  window.scrollTo(0,0);
-  document.getElementById("CONTENT-OPENED").removeAttribute("id");
-  document.getElementsByClassName("CONTENT-CLOSED")[num].id="CONTENT-OPENED";
+  // window.scrollTo(0,0);
+  // document.getElementById("CONTENT-OPENED").removeAttribute("id");
+  // document.getElementsByClassName("CONTENT-CLOSED")[num].id="CONTENT-OPENED";
+  document.getElementsByClassName("CONTENT-CLOSED")[num].scrollIntoView();
 }
 
 // Collapsible Text
-var coll = document.getElementsByClassName("collapsible");
+var coll = document.getElementsByClassName("collapseBtn");
 for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
     this.classList.toggle("active");

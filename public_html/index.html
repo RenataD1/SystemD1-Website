@@ -32,6 +32,7 @@
             <div id="title-div">
 
                 <h1 id="title">Dillon Hayes</h1>
+                
             </div>
             <div id="scrolling-banner">
                 <marquee id="pinkMarq">
@@ -67,7 +68,7 @@
                 <!-- STATUS -->
                 <div class="nav-tab" onclick="goToTab(1)">
                     <a class="nav-text">
-                      STATUS
+                      MISSION
                     </a>
                     <img class="nav-image"
                     onmouseover="this.src='res/img/nav-tab-hover.png';"
@@ -77,7 +78,7 @@
                 <!-- MEDIA -->
                 <div class="nav-tab" onclick="goToTab(2)">
                     <a class="nav-text">
-                      MEDIA
+                      COMMUNITY
                     </a>
                     <img class="nav-image"
                     onmouseover="this.src='res/img/nav-tab-hover.png';"
@@ -87,7 +88,7 @@
                 <!-- FILES -->
                 <div class="nav-tab" onclick="goToTab(3)">
                     <a class="nav-text">
-                      FILES
+                      CONTACT
                     </a>
                     <img class="nav-image"
                     onmouseover="this.src='res/img/nav-tab-hover.png';"
@@ -97,7 +98,7 @@
                 <!-- CONTACT -->
                 <div class="nav-tab" onclick="goToTab(4)">
                     <a class="nav-text">
-                      CONTACT
+                      OTHER
                     </a>
                     <img class="nav-image"
                     onmouseover="this.src='res/img/nav-tab-hover.png';"
@@ -119,8 +120,14 @@
           <!-- ABOUT SECTION -->
 
           <div class="CONTENT-CLOSED"id="CONTENT-OPENED">
+
+            <div id="logo-block">
+              <h2 id="status">WEEK 0</h2>
+              <img class="displayImg"src="res/img/d_logo.png" id="logo">
+            </div>
+
             <div class="sectionable-block">
-                <div class="text">
+                <div class="text" id="about">
                     <h2>ABOUT</h2>
                     <p>The Wiki now has translation options. Simply log in and press "Translate this page"!
                       I'll reward people who translate a lot of content a lot of disk space, as thanks for putting so much work into the Project!
@@ -130,28 +137,28 @@
                     </p>
                 </div>
             </div>
-            <div id="status"><h2>WEEK: 0</h2></div>
-
-            <div class="sectionable-block">
-              <img class="displayImg"src="res/img/d_logo.png">
-            </div>
             <div class="sectionable-block" style="background: rgba(234, 0, 217, 0.2);" >
                 <!--ABOUT-->
-                <button class="collapsible">ABOUT </button>
-                <div class="content">
-                    <div class="text">
+                <div class="collapsible">
 
-                    <p>This the landing page for the d1_h85.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <button onclick="window.open('form/human-survey.html','_self');">Take the Human Survey!</button>
-                    </div>
-                </div>
+                  <button class="collapseBtn">ABOUT </button>
 
-                <!--SUMMARY-->
-                <button class="collapsible" style="background-color:#c5b358">A QUICK SUMMARY </button>
-                <div class="content">
-                    <div class="text" style="background-color:#c5b358">
+                  <div class="collapseContent">
+                      <div class="text">
+
                       <p>This the landing page for the d1_h85.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    </div>
+                      <button onclick="window.open('form/human-survey.html','_self');">Take the Human Survey!</button>
+                      </div>
+                  </div>
+                </div>
+                <!--SUMMARY-->
+                <div class="collapsible">
+                  <button class="collapseBtn" style="background-color:#c5b358">A QUICK SUMMARY </button>
+                  <div class="collapseContent">
+                      <div class="text" style="background-color:#c5b358">
+                        <p>This the landing page for the d1_h85.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                      </div>
+                  </div>
                 </div>
 
             </div>
@@ -246,13 +253,6 @@
             <img src="res/img/nav-tab.png">
             <img src="res/img/nav-tab-hover.png">
           </div>
-          <!-- FILES SECTION -->
-          <div class="CONTENT-CLOSED">
-            <iframe id = "google-form" src="https://docs.google.com/forms/d/e/1FAIpQLSd8VPBLkqIToVI5PZZPM9ZVSCl67HX28SFscWgJP8Lm0RMTkA/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-            <hr>
-            <br>
-            <a href="kokuhaku.html">OPEN TERMINAL NOW!!!!</a>
-          </div>
           <!-- CONTACT SECTION -->
           <div class="CONTENT-CLOSED">
             <div class="sectionable-block">
@@ -298,6 +298,14 @@
               </div>
             </div>
           </div>
+          <!-- FILES SECTION -->
+          <div class="CONTENT-CLOSED">
+            <iframe id = "google-form" src="https://docs.google.com/forms/d/e/1FAIpQLSd8VPBLkqIToVI5PZZPM9ZVSCl67HX28SFscWgJP8Lm0RMTkA/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            <hr>
+            <br>
+            <a href="kokuhaku.html">OPEN TERMINAL NOW!!!!</a>
+          </div>
+
 
 
       </div>
