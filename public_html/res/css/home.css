@@ -128,7 +128,7 @@ footer {
   display:block;
 }
 .CONTENT-CLOSED{
-  /* display:none; */
+  display:none;
   height:100%;
 }
 .CONTENT-CLOSED:nth-child(5){
@@ -316,6 +316,8 @@ button:focus {
     max-width:40%;
     margin: 0px 5% 10%;
   }
-
+  #logo {
+    width:50%;
+  }
 
 }
