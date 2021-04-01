@@ -6,10 +6,10 @@ window.onload = () => {
 
 // Tab System
 function goToTab(num){
-  // window.scrollTo(0,0);
-  // document.getElementById("CONTENT-OPENED").removeAttribute("id");
-  // document.getElementsByClassName("CONTENT-CLOSED")[num].id="CONTENT-OPENED";
-  document.getElementsByClassName("CONTENT-CLOSED")[num].scrollIntoView();
+  window.scrollTo(0,0);
+  document.getElementById("CONTENT-OPENED").removeAttribute("id");
+  document.getElementsByClassName("CONTENT-CLOSED")[num].id="CONTENT-OPENED";
+  // document.getElementsByClassName("CONTENT-CLOSED")[num].scrollIntoView();
 }
 
 // Collapsible Text
@@ -27,3 +27,34 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
+
+// countdown
+var today = new Date();
+var deadline = new Date('Wed Aug 18 2021 12:00:00');
+var distance = (deadline.getTime() - today.getTime());
+
+var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+var milliseconds = Math.floor((distance % 1000));
+
+// document.getElementById("time").value = dateTime;
+var countdown = days + ":" + hours + ":" + minutes + ":" + seconds + ":" + milliseconds;
+document.getElementById("countdown").innerHTML = countdown;
+var x = setInterval(function(){
+    today = new Date();
+    deadline = new Date('Wed Aug 18 2021 12:00:00');
+    distance = (deadline.getTime() - today.getTime());
+
+    days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    milliseconds = Math.floor((distance % 1000));
+
+    // document.getElementById("time").value = dateTime;
+    countdown = days + ":" + hours + ":" + minutes + ":" + seconds + ":" + milliseconds;
+    document.getElementById("countdown").innerHTML = countdown;
+}
+,10);
