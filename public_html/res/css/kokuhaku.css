@@ -1,3 +1,15 @@
+@font-face {
+  font-family:'VT323';
+  src:url('res/fonts/VT323.ttf');
+}
+@font-face {
+  font-family:'manaspc';
+  src:url('res/fonts/manaspc.ttf');
+}
+@font-face {
+  font-family:'webpixel';
+  src:url('res/fonts/webpixel.otf');
+}
 * {
     margin: 0;
     padding: 0;
@@ -58,15 +70,20 @@ marquee:hover{
 }
 
 .body {
+  font-family:'VT323', monospace;
   color:white;
   background-color: rgba(0, 0, 0, 0.9);
   position:static;
   /* height:30em; */
   margin:0 0.5em 10px;
-  padding:10px 20px 10px;
+  padding:20px 20px 20px;
   border: 2px solid white;
   /* overflow:auto; */
   /* box-shadow:0 0 100px #30D5C8; */
+}
+
+p,ul {
+  font-family:'webpixel', monospace;
 }
 
 #kokuhakuBox{
@@ -75,12 +92,15 @@ marquee:hover{
   linear-gradient(to bottom, rgba(36, 25, 0, 0.9), rgba(36, 25, 0, 0.99)),
   url("https://i.makeagif.com/media/7-05-2015/jmS9C-.gif");
   animation: flashing ease-out 1s;
-  margin:10px 0 0;
   border:2px solid white;
   overflow:auto;
   height:10em;
   resize:vertical;
   width:100%;
+}
+li {
+  clear:left;
+  padding:0;
 }
 @keyframes flashing {
   0%{
@@ -127,7 +147,7 @@ marquee:hover{
   font-family:'VT323', monospace;
   font-size:12pt;
   background-color: black;
-  margin:15px 0px 0px;
+  margin:10px 0px 0px;
   border:2px solid white;
   overflow:hidden;
   height:12pt;
@@ -153,7 +173,7 @@ marquee:hover{
 }
 #back{
   position:relative;
-  top:100%;
+  /* bottom:; */
   float:right;
   text-decoration: none;
 }
