@@ -1,3 +1,8 @@
+// var input;
+// while (true){
+  // input = readLine();
+  // terminal(input);
+// }
 // Audio objects
 var typeFX = document.getElementById("soundFX");
 
@@ -14,8 +19,9 @@ prompt.addEventListener("keypress", function(event) {
 var startMessage = "Last Update: Wed Mar 31 12:00:00 //a29rdWhha3U=\u2122";
 // add commands here
 function terminal(input){
+  input == String(input).toLowerCase();
   typeFX.play();
-  console.log(typeFX);
+  // console.log(typeFX);
   document.getElementsByClassName("blink")[0].parentNode.removeChild(document.getElementsByClassName("blink")[0]);
   // document.getElementById("kokuhakuText").innerHTML += "D1% ";
   switch(input){
