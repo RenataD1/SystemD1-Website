@@ -4,7 +4,7 @@
   // terminal(input);
 // }
 // Audio objects
-var typeFX = document.getElementById("soundFX");
+var printFX = document.getElementById("soundFX");
 
 
 // Event listeners
@@ -20,8 +20,8 @@ var startMessage = "Last Update: Wed Mar 31 12:00:00 //a29rdWhha3U=\u2122";
 // add commands here
 function terminal(input){
   input == String(input).toLowerCase();
-  typeFX.play();
-  // console.log(typeFX);
+  printFX.play();
+  // console.log(printFX);
   document.getElementsByClassName("blink")[0].parentNode.removeChild(document.getElementsByClassName("blink")[0]);
   // document.getElementById("kokuhakuText").innerHTML += "D1% ";
   switch(input){
@@ -80,11 +80,11 @@ function loadMessage(msg) {
 
     i = 0;
 
-    typeLine();
+    printLine();
 }
 
-// typewriter effect
-function typeLine() {
+// printwriter effect
+function printLine() {
   // if (document.getElementById("kokuhakuBox").scrollTop != document.getElementById("kokuhakuBox").scrollHeight){
     document.getElementById("kokuhakuBox").scrollTop = document.getElementById("kokuhakuBox").scrollHeight;
   // }
@@ -99,9 +99,9 @@ function typeLine() {
         document.getElementById("kokuhakuBox").scrollTop = document.getElementById("kokuhakuBox").scrollHeight;
         document.getElementById("kokuhakuText").innerHTML += "<br>";
         i+=2;
-        typeFX.pause();
-        typeFX.currentTime = 0;
-        typeFX.play();
+        printFX.pause();
+        printFX.currentTime = 0;
+        printFX.play();
       }else{
         document.getElementById("kokuhakuText").innerHTML += message.charAt(i);
         i++;
@@ -111,9 +111,9 @@ function typeLine() {
           prompt.style.visibility = "visible";
           // document.getElementById("next").style.visibility = "visible";
           document.getElementById("kokuhakuText").innerHTML += "<br>D1 ~ % <span class='blink'>|</span>";
-          typeFX.pause();
+          printFX.pause();
       }
-      setTimeout(typeLine, 20);
+      setTimeout(printLine, 20);
   }
 }
 
