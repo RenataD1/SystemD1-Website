@@ -16,7 +16,7 @@
   }
 
   .imagebox {
-      padding:2em 2em 2em;
+      padding:2em 2em 0em;
   }
 
   .dialogue {
@@ -29,6 +29,7 @@
   }
 
   #first-marquee {
+      display:none;
       visibility:visible;
       position:absolute;
       font-family: 'VT323', monospace;
@@ -43,7 +44,7 @@
       font-size:30pt;
   }
 
-  #room {
+  #displayBg {
       z-index:2;
       display: block;
       margin-left: auto;
@@ -52,10 +53,12 @@
 
   }
 
-  #window {
+  #display {
       z-index:1;
+
       position:absolute;
       border: 2px solid white;
+
       display: block;
       margin-left: auto;
       margin-right: auto;
@@ -65,10 +68,11 @@
   #messageBox {
       padding:1em 1em 1em;
       border: 2px solid white;
-      text-align:left;
+
       display: block;
       margin-left: auto;
       margin-right: auto;
+      max-width:82%;
 
       color:white;
       font-family: 'VT323', monospace;
@@ -91,6 +95,65 @@
       border-color: yellow;
   }
 
+  #kokuhaku{
+    /* visibility: hidden; */
+  }
+  /* #kokuhaku.opened {
+    visibility:visible;
+  }
+  #kokuhaku.closed {
+    visibility: visible;
+  } */
+  #kokuhakuBox{
+    background-image:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
+    url("https://i.makeagif.com/media/7-05-2015/jmS9C-.gif");
+    animation: flashing ease-out 1s;
+    border:2px solid white;
+    overflow:scroll;
+    height:0em;
+    resize:none;
+    max-width:78%;
+    border-top:none;
+    border-bottom:none;
+    margin:0 auto 0;
+    transition: height 0.5s ease-out;
+  }
+
+.opened #kokuhakuBox{
+  /* animation:appear ease-out 0.7s; */
+  height:5em;
+}
+.closed #kokuhakuBox{
+
+  animation-direction: reverse;
+  /* animation:appear ease-out 0.7s; */
+  height:0em;
+}
+  @keyframes appear {
+    0%{height:0em;}
+    100%{height:5em;}
+  }
+  #kokuhakuText {
+    margin:1em 1em 1em;
+    float:bottom;
+    position:relative;
+    color:#00B0FF;
+    font-family: 'VT323', monospace;
+    font-size:12pt;
+    text-shadow: 0 0 5px #00B0FF;
+  }
+  .blink{
+    animation: blink 1s infinite;
+  }
+  @keyframes blink {
+    50%{
+      opacity:1;
+    }
+    0%, 100%{
+      opacity:0;
+    }
+  }
   @media only screen and (min-width: 768px) {
       body {
           background-color:black;
@@ -118,7 +181,7 @@
           margin:auto;
       }
 
-      #window {
+      #display {
           position:absolute;
           width:29.8%;
       }

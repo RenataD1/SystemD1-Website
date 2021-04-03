@@ -6,6 +6,8 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=VT323" rel="stylesheet">
         <link rel="stylesheet" href="../res/css/iteration.css">
+        <!-- <link rel="stylesheet" href="../res/css/kokuhaku.css"> -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
     <body>
         <div class="header">
@@ -13,11 +15,21 @@
             </marquee>
         </div>
 
+
+
         <div class="imagebox">
 
-            <img src="../res/sprites/nothing.png" id="window">
-            <img src="../res/sprites/circle.gif" id="room">
+            <img src="../res/sprites/nothing.png" id="display">
+            <img src="../res/sprites/circle.gif" id="displayBg">
 
+        </div>
+
+        <div id="kokuhaku">
+          <div id="kokuhakuBox">
+            <p id="kokuhakuText">
+            </p>
+            <!-- <br> -->
+          </div>
         </div>
 
         <div class="dialogue">
@@ -39,11 +51,13 @@
 
         </div>
 
+
+
         <!--Removes Banner-->
         <script src="https://helpdillon.000webhostapp.com/removeBanner.js"></script>
 
         <script src="../res/js/iteration.js"></script>
-
+        <script src="../res/js/blue.js"></script>
 
     </body>
 </html>
