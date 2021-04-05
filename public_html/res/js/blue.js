@@ -27,7 +27,7 @@ function terminal(input){
 
     case "clear":
       document.getElementById("kokuhakuText").innerHTML = "";
-      printMessage("Last Update: Wed Mar 17 23:26:27 // a29rdWhha3U=\u2122");
+      printMessage(startMessage);
       document.getElementById("input").value = "";
       break;
     case "refresh":
@@ -56,6 +56,7 @@ function terminal(input){
 var message = "";
 // line handler
 function printMessage(msg) {
+    document.getElementById("kokuhaku").className="opened";
     message = msg;
     // document.getElementById("input").value = "";
 
@@ -99,4 +100,4 @@ function printLine() {
 }
 
 // terminal header
-var startMessage = "/nLast Update: Wed Mar 31 12:00:00//Blue\u2122";
+var startMessage = "/n\x3CKokuhaku\u2122Blue\x3E // Mar 31 2021";

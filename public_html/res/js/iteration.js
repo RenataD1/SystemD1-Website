@@ -1,11 +1,11 @@
 // Marquee Time
-var integer = 0;
-var glitch = "";
-document.getElementById("first-marquee").innerHTML = Date();
-var x = setInterval(function(){
-    document.title = Date();
-    document.getElementById("first-marquee").innerHTML = Date() + " what you are reading is not a mistake what you are reading is not a mistake  what you are reading is not a mistake  what you are reading is not a mistake  what you are reading is not a mistake  what you are reading is not a mistake what you are reading is not a mistake what you are reading is not a mistake  what you are reading is not a mistake  what you are reading is not a mistake  what you are reading is not a mistake  what you are reading is not a mistake what you are reading is not a mistake what you are reading is not a mistake  what you are reading is not a mistake  what you are reading is not a mistake  what you are reading is not a mistake  what you are reading is not a mistake what you are reading is not a mistake what you are reading is not a mistake  what you are reading is not a mistake  what you are reading is not a mistake  what you are reading is not a mistake  what you are reading is not a mistake what you are reading is not a mistake what you are reading is not a mistake  what you are reading is not a mistake  what you are reading is not a mistake  what you are reading is not a mistake  what you are reading is not a mistake ";
-},1000);
+// var integer = 0;
+// var glitch = "";
+// document.getElementById("first-marquee").innerHTML = Date();
+// var x = setInterval(function(){
+//     document.title = Date();
+//     document.getElementById("first-marquee").innerHTML = Date() + " what you are reading is not a mistake what you are reading is not a mistake  what you are reading is not a mistake  what you are reading is not a mistake  what you are reading is not a mistake  what you are reading is not a mistake what you are reading is not a mistake what you are reading is not a mistake  what you are reading is not a mistake  what you are reading is not a mistake  what you are reading is not a mistake  what you are reading is not a mistake what you are reading is not a mistake what you are reading is not a mistake  what you are reading is not a mistake  what you are reading is not a mistake  what you are reading is not a mistake  what you are reading is not a mistake what you are reading is not a mistake what you are reading is not a mistake  what you are reading is not a mistake  what you are reading is not a mistake  what you are reading is not a mistake  what you are reading is not a mistake what you are reading is not a mistake what you are reading is not a mistake  what you are reading is not a mistake  what you are reading is not a mistake  what you are reading is not a mistake  what you are reading is not a mistake ";
+// },1000);
 
 
 
@@ -19,7 +19,7 @@ var lineNum = -1;
 var talk = document.getElementById("soundFX");
 var track1 = document.getElementById("bg-music");
 
-var messageBox = document.getElementById("messageBox");
+var messageBox = document.getElementById("dialogue");
 var display = document.getElementById("display");
 var blue = document.getElementById("kokuhaku");
 
@@ -76,7 +76,7 @@ function load(){
             break;
         case 5:
             // blue.style.visibility = "visible";
-            document.getElementById("kokuhaku").className="opened";
+            
             // messageBox = document.getElementById("kokuhakuText");
             printMessage(startMessage + "/nGood morning, Dillon Hayes.");
             break;
@@ -87,11 +87,11 @@ function load(){
           printMessage("/nMaybe if you slowed down a bit, I'd actually be able to update my software.");
           break;
         case 8:
-            messageBox = document.getElementById("messageBox");
+            messageBox = document.getElementById("dialogue");
             break;
         case 9:
             document.getElementById("kokuhakuText").innerHTML = "";
-            // terminal("clear");
+            // terminal("news");
             break;
         case 10:
             document.getElementById("kokuhaku").removeAttribute("class");

@@ -7,52 +7,51 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=VT323" rel="stylesheet">
   <link rel="stylesheet" href="../res/css/iteration.css">
-  <!-- <link rel="stylesheet" href="../res/css/kokuhaku.css"> -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
-  <div class="header">
+  <!-- <div class="header">
     <marquee id="first-marquee">
     </marquee>
-  </div>
+  </div> -->
 
 
 
-  <div class="imagebox">
 
-    <img src="../res/sprites/nothing.png" id="display">
-    <img src="../res/sprites/circle.gif" id="displayBg">
+  <div id="main-body">
+    <div class="imagebox">
 
-  </div>
+      <img src="../res/sprites/nothing.png" id="display">
+      <img src="../res/sprites/circle.gif" id="displayBg">
 
-  <div id="kokuhaku">
-    <div id="kokuhakuBox">
-      <p id="kokuhakuText">
-      </p>
-      <!-- <br> -->
+    </div>
+    <div id="kokuhaku">
+      <div id="kokuhakuBox">
+        <p id="kokuhakuText">
+        </p>
+        <!-- <br> -->
+      </div>
+    </div>
+    <div class="messageBox">
+
+      <h id="dialogue"></h>
+
+    </div>
+
+    <div class="buttons">
+
+      <button onclick="load()" id="next">NEXT ></button>
+
+      <audio id="soundFX">
+        <source src="../res/aud/fx/talking_noise.mp3" type="audio/mpeg">
+      </audio>
+      <audio id="bg-music" loop>
+        <source src="../res/aud/music/something_we_think_is_nice.mp3" type="audio/mpeg">
+      </audio>
+
     </div>
   </div>
-
-  <div class="dialogue">
-
-    <h id="messageBox"></h>
-
-  </div>
-
-  <div class="buttons">
-
-    <button onclick="load()" id="next">NEXT ></button>
-
-    <audio id="soundFX">
-      <source src="../res/aud/fx/talking_noise.mp3" type="audio/mpeg">
-    </audio>
-    <audio id="bg-music" loop>
-      <source src="../res/aud/music/something_we_think_is_nice.mp3" type="audio/mpeg">
-    </audio>
-
-  </div>
-
 
 
   <!--Removes Banner-->
