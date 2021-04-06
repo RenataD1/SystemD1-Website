@@ -5,12 +5,23 @@
 html {
   max-height:100%;
   background-color:black;
-  /* scroll-behavior: smooth; */
 
 }
 
 a {
   text-decoration: none;
+  font-family:"VT323", monospace;
+  color:white;
+}
+
+a:hover {
+  color:yellow;
+}
+
+.news-preview a {
+  right:10px;
+  position:absolute;
+  bottom:10px;
 }
 
 img {
@@ -97,6 +108,10 @@ a.nav-text{
     transition:0.1s;
 }
 
+#main-body {
+  padding:60px 0 0;
+}
+
 footer {
     font-style:italic;
     background-color:black;
@@ -105,18 +120,21 @@ footer {
     bottom:0;
     position:fixed;
     width:100%;
+    font-family:"VT323", monospace;
 }
 
 #CONTENT-OPENED{
   display:block;
   height:100%;
+
 }
 .CONTENT-CLOSED{
   display:none;
   background-size:cover;
   height:100%;
-  padding:80px 0 50%;
-  /* padding:inherit; */
+
+
+  padding-bottom:50%;
 }
 .CONTENT-CLOSED:nth-child(1){
   background-image: url("../img/miniwaSpace.png");
@@ -176,6 +194,23 @@ footer {
 .sectionable-block {
     padding:2em 2em 2em;
     background-size:cover;
+
+    clear:both;
+}
+.news-block {
+    background-size:cover;
+}
+
+.news-preview {
+  position:relative;
+  border:4px double white;
+  padding:10px 10px 10px;
+  height:200px;
+}
+
+.news-image {
+  max-height:50%;
+  object-fit: cover;
 }
 
 .text {
@@ -190,6 +225,15 @@ h2 {
     color:white;
     text-shadow:2px 2px 0px #ea007f;
 }
+
+h3 {
+  font-family: 'VT323', monospace;
+  font-size:20pt;
+  color:white;
+
+  /* text-shadow:2px 2px 0px #ea007f; */
+}
+
 p {
     font-family: 'webpixel';
     font-size:15pt;
@@ -236,10 +280,8 @@ ul {
 .collapseBtn {
     font-family: 'webpixel', monospace;
     /* border-top:solid 2px white; */
-    border:none;
-    border-left:hidden;
-    border-right:hidden;
-    border-bottom:hidden;
+    border:hidden;
+
     transition:0.1s;
     margin:0 0 0.25em;
     text-align:left;
@@ -248,6 +290,7 @@ ul {
     padding: 10px 10px 10px;
     background-color:#060232;
     width:100%;
+    height:50px;
     box-shadow:3px 3px 0px #FFFFFF;
 }
 .collapseBtn:hover{
@@ -256,12 +299,17 @@ ul {
 }
 .collapseBtn:after {
   content: '\002B';
+}
 
+.collapseContent {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  box-shadow:3px 3px 0px #ea007f;
 }
 
 .active:after {
   content: "\2212";
-
 }
 button:focus {
     outline:0;
@@ -285,12 +333,7 @@ button:focus {
 .submitBtn{
   font-family:'webpixel';
 }
-.collapseContent {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  box-shadow:3px 3px 0px #ea007f;
-}
+
 
 #chamber{
   width:50%;
@@ -333,13 +376,30 @@ button:focus {
   margin:0 10px 0;
 }
 
+#sidebar {
+  display:none;
+}
+
 @media only screen and (min-width: 768px) {
   .CONTENT-CLOSED{
     /* padding-bottom:50%; */
   }
   #main-body{
-    padding:0px 0 200px;
+    padding:50px 0 200px;
+    display:block;
+    /* max-width: 70%; */
+    /* float: left; */
   }
+
+  #sidebar {
+    padding:50px 0 200px;
+    display:block;
+    background-color: white;
+    float:left;
+    /* max-width: 30%; */
+    height:1000px;
+  }
+
 
   #nav-bar{
     position:relative;
@@ -349,18 +409,34 @@ button:focus {
     /* float:right; */
     max-width:8%;
 
-
   }
   a.nav-text{
     width:8%;
     font-size:15px;
   }
   .collapsible{
-
     float:left;
-    max-width:40%;
-    margin: 0px 5% 10%;
+    width:40%;
+    margin: 0 5% 10px;
   }
+
+  .row {
+    position:relative;
+    clear:both;
+  }
+
+  .news-block {
+      /* clear:both; */
+
+  }
+
+  .news-preview {
+    max-width: 30%;
+    float:left;
+    margin:10px 5px 10px;
+  }
+
+
   #logo {
     width:50%;
   }

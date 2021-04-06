@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>News</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="icon" href="res/img/d_logo.png"></link>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <!-- <link href="https://fonts.googleapis.com/css2?family=VT323" rel="stylesheet"> -->
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="res/css/home.css">
+
+        <script src="res/js/home.js" defer></script>
+        <style>
+          @font-face {
+            font-family:'VT323';
+            src:url('res/fonts/VT323.ttf');
+          }
+          @font-face {
+            font-family:'manaspc';
+            src:url('res/fonts/manaspc.ttf');
+          }
+          @font-face {
+            font-family:'webpixel';
+            src:url('res/fonts/webpixel.otf');
+          }
+        </style>
+    </head>
+
+
+    <body id="home-body">
+        <div id="header">
+            <img class="title-bg" src="res/img/title-background.png">
+            <div id="title-div">
+
+                <h1 id="title">Dillon Hayes</h1>
+
+            </div>
+            <div id="scrolling-banner">
+                <marquee id="pinkMarq">
+                    pink marquee
+                </marquee>
+                <marquee scrollamount="8" id="whiteMarq">
+                    white marquee
+                </marquee>
+                <script>
+                    var marquee = document.getElementById("pinkMarq").innerHTML;
+                    var marquee2 = document.getElementById("whiteMarq").innerHTML;
+                    for(var i = 0; i < 100; i++){
+                      document.getElementById("pinkMarq").innerHTML+=marquee;
+                      document.getElementById("whiteMarq").innerHTML+=marquee2;
+
+                    }
+                </script>
+
+
+            </div>
+        </div>
+
+        <!-- <div id="video-player">
+            <marquee id="video-sign">DnB MUSIC 24/7</marquee>
+            <img id="video-banner" src="res/img/music-sign.gif">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Rf4jJzziJko?controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div> -->
+
+        <div id="main-body">
+          <!-- <div class="CONTENT-CLOSED" id="CONTENT-OPENED"> -->
+            <div class="news-block">
+              <div class="news-preview">
+                <img class="news-image" src="https://i.kym-cdn.com/photos/images/newsfeed/000/948/084/403.jpg"></img>
+                <h3>News 1</h3>
+                <p class="author"></p><p class="date"></p>
+                <p>Description description</p>
+                <a href="fakenews.html">read ></a>
+              </div>
+            </div>
+
+            <div class="news-block">
+              <div class="news-preview">
+                <img class="news-image" src="res/img/amerika.png"></img>
+                <h3>News 2</h3>
+                <p class="author"></p><p class="date"></p>
+                <p>Description description</p>
+                <a href="fakenews.html">read ></a>
+              </div>
+            </div>
+
+            <div class="news-block">
+              <div class="news-preview">
+                <img class="news-image" src="res/img/construction.webp"></img>
+                <h3>News 3</h3>
+                <p class="author"></p><p class="date"></p>
+                <p>Description description</p>
+                <a href="fakenews.html">read ></a>
+              </div>
+            </div>
+
+            <div class="news-block">
+              <div class="news-preview">
+                <img class="news-image" src="res/img/d_logo.png"></img>
+                <h3>News 4</h3>
+                <p class="author"></p><p class="date"></p>
+                <p>Description description</p>
+                <a href="fakenews.html">read ></a>
+              </div>
+            </div>
+
+            <div class="news-block">
+              <div class="news-preview">
+                <img class="news-image" src="https://i.kym-cdn.com/photos/images/newsfeed/000/948/084/403.jpg"></img>
+                <h3>News 5</h3>
+                <p class="author"></p><p class="date"></p>
+                <p>Description description</p>
+                <a href="fakenews.html">read ></a>
+              </div>
+            </div>
+
+            <div class="news-block">
+              <div class="news-preview">
+                <img class="news-image" src="https://i.kym-cdn.com/photos/images/newsfeed/000/948/084/403.jpg"></img>
+                <h3>News 6</h3>
+                <p class="author"></p><p class="date"></p>
+                <p>Description description</p>
+                <a href="fakenews.html">read ></a>
+              </div>
+            </div>
+
+            <div class="news-block">
+              <div class="news-preview">
+                <img class="news-image" src="https://i.kym-cdn.com/photos/images/newsfeed/000/948/084/403.jpg"></img>
+                <h3>News 7</h3>
+                <p class="author"></p><p class="date"></p>
+                <p>Description description</p>
+                <a href="fakenews.html">read ></a>
+              </div>
+            </div>
+
+            <div class="news-block">
+              <div class="news-preview">
+                <img class="news-image" src="https://i.kym-cdn.com/photos/images/newsfeed/000/948/084/403.jpg"></img>
+                <h3>News 8</h3>
+                <p class="author"></p><p class="date"></p>
+                <p>Description description</p>
+                <a href="fakenews.html">read ></a>
+              </div>
+            </div>
+
+            <div class="news-block">
+              <div class="news-preview">
+                <img class="news-image" src="https://i.kym-cdn.com/photos/images/newsfeed/000/948/084/403.jpg"></img>
+                <h3>News 9</h3>
+                <p class="author"></p><p class="date"></p>
+                <p>Description description</p>
+                <a href="fakenews.html">read ></a>
+              </div>
+            </div>
+          </div>
+          
+        <!-- </div> -->
+        <footer>
+            <hr>
+              <a href="https://github.com/RenataD1/SystemD1-Website">v1.2</a>"Present day. Present time."
+        </footer>
+
+
+    </body>
+</html>
