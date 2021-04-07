@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="icon" href="res/img/d_logo.png"></link>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <!-- <link href="https://fonts.googleapis.com/css2?family=VT323" rel="stylesheet"> -->
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="res/css/home.css">
+
+        <script src="res/js/home.js" defer></script>
+        <style>
+          @font-face {
+            font-family:'VT323';
+            src:url('res/fonts/VT323.ttf');
+          }
+          @font-face {
+            font-family:'manaspc';
+            src:url('res/fonts/manaspc.ttf');
+          }
+          @font-face {
+            font-family:'webpixel';
+            src:url('res/fonts/webpixel.otf');
+          }
+        </style>
+    </head>
+
+
+    <body id="home-body">
+        <div id="header">
+            <img class="title-bg" src="res/img/title-background.png">
+            <div id="title-div">
+
+                <h1 id="title">Dillon Hayes</h1>
+
+            </div>
+            <div id="scrolling-banner">
+                <marquee id="pinkMarq">
+                    pink marquee
+                </marquee>
+                <marquee scrollamount="8" id="whiteMarq">
+                    white marquee
+                </marquee>
+                <script>
+                    var marquee = document.getElementById("pinkMarq").innerHTML;
+                    var marquee2 = document.getElementById("whiteMarq").innerHTML;
+                    for(var i = 0; i < 100; i++){
+                      document.getElementById("pinkMarq").innerHTML+=marquee;
+                      document.getElementById("whiteMarq").innerHTML+=marquee2;
+
+                    }
+                </script>
+
+
+            </div>
+            <div id="nav-bar">
+              <nav>
+                <!-- ABOUT -->
+                <div class="nav-tab" onclick="goToTab(0)">
+                    <a class="nav-text">
+                      ABOUT
+                    </a>
+                    <img class="nav-image"
+                    onmouseover="this.src='res/img/nav-tab-hover.png';"
+                    onmouseout="this.src='res/img/nav-tab.png';"
+                    class="nav-image" href="home.html" src="res/img/nav-tab.png">
+                </div>
+                <!-- STATUS -->
+                <div class="nav-tab" onclick="goToTab(1)">
+                    <a class="nav-text">
+                      MISSION
+                    </a>
+                    <img class="nav-image"
+                    onmouseover="this.src='res/img/nav-tab-hover.png';"
+                    onmouseout="this.src='res/img/nav-tab.png';"
+                    class="nav-image" href="home.html" src="res/img/nav-tab.png">
+                </div>
+                <!-- MEDIA -->
+                <div class="nav-tab" onclick="goToTab(2)">
+                    <a class="nav-text">
+                      COMMUNITY
+                    </a>
+                    <img class="nav-image"
+                    onmouseover="this.src='res/img/nav-tab-hover.png';"
+                    onmouseout="this.src='res/img/nav-tab.png';"
+                    class="nav-image" href="home.html" src="res/img/nav-tab.png">
+                </div>
+                <!-- FILES -->
+                <div class="nav-tab" onclick="goToTab(3)">
+                    <a class="nav-text">
+                      CONTACT
+                    </a>
+                    <img class="nav-image"
+                    onmouseover="this.src='res/img/nav-tab-hover.png';"
+                    onmouseout="this.src='res/img/nav-tab.png';"
+                    class="nav-image" href="home.html" src="res/img/nav-tab.png">
+                </div>
+                <!-- CONTACT -->
+                <div class="nav-tab" onclick="goToTab(4)">
+                    <a class="nav-text">
+                      OTHER
+                    </a>
+                    <img class="nav-image"
+                    onmouseover="this.src='res/img/nav-tab-hover.png';"
+                    onmouseout="this.src='res/img/nav-tab.png';"
+                    class="nav-image" href="home.html" src="res/img/nav-tab.png">
+                </div>
+
+              </nav>
+            </div>
+        </div>
+
+        <div id="video-player">
+            <marquee id="video-sign">DnB MUSIC 24/7</marquee>
+            <img id="video-banner" src="res/img/music-sign.gif">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Rf4jJzziJko?controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <div id="main-body">
+          <!-- ABOUT SECTION -->
+          <div class="CONTENT-CLOSED" id="CONTENT-OPENED">
+
+            <div id="logo-block">
+              <h2 id="status">WEEK 0</h2>
+              <img class="displayImg"src="res/img/d_logo.png" id="logo">
+            </div>
+            <!-- about + project nephilim -->
+            <div class="sectionable-block">
+
+                <div class="text" id="about">
+                    <h2>ABOUT SYSTEMD1</h2>
+                    <p>Welcome to systemd1.org. This website is the home of Dillon Hayes. The Wiki now has translation options. Simply log in and press "Translate this page"!
+                      I'll reward people who translate a lot of content a lot of disk space, as thanks for putting so much work into the Project!
+                      View the Wiki here: wiki.systemspace.link
+                      View pages needing translation here: Language Stats (enter a language into "Language code" to see its status)
+                      Thank you very much!
+                    </p>
+                </div>
+                <img id="campus" src="http://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/16/25350/10752">
+                <div class="text" style="background-color:gold;">
+                    <h2>PROJECT NEPHILIM</h2>
+                    <p>Our goal as System-d1, is to reassemble the shattered soul of lost user Dillon Hayes. Upon initial
+                      contact on Earth, his memories were corrupted, and have now scattered across the area surrounding .
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- news -->
+            <div class="sectionable-block" style="background-color:black;">
+              <p><b>Don't miss out</b></p>
+              <p>
+                Want to catch up on the latest news about d1_h85?
+                <a href="news.html">See the wiki.</a>
+              </p>
+            </div>
+
+            <!-- FAQ -->
+            <div class="sectionable-block">
+                <h2>FAQ</h2>
+                <div class="row">
+                  <!-- question 1 -->
+                  <div class="collapsible">
+                    <button class="collapseBtn">Why are you doing this? </button>
+                    <div class="collapseContent">
+                        <div class="text">
+                          <p>
+                            System-d1 is dedicated to reversing the effects of an inter-system breach which
+                            took place on this Earth in 2017.
+                          </p>
+                          <button onclick="window.open('form/human-survey.html','_self');">Take the Human Survey!</button>
+                        </div>
+                    </div>
+                  </div>
+                  <!-- question 2 -->
+                  <div class="collapsible">
+                    <button class="collapseBtn" style="background-color:#c5b358">What does this have to do with Enochs? </button>
+                    <div class="collapseContent">
+                        <div class="text" style="background-color:#c5b358">
+                          <p>
+                            Our diagnostic reports show that Dillon Hayes, the chosen key, is from an area almost identical
+                            to Riverbank and Modesto, California.
+                          </p>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <!-- question 3 -->
+                  <div class="collapsible">
+                    <button class="collapseBtn" style="background-color:gold">Who runs this project? Can I personally reach them? </button>
+                    <div class="collapseContent">
+                        <div class="text" style="background-color:gold">
+                          <p>
+                            For the sake of maintaining security, we do not disclose information about our staff.
+                            That being said, we do have a representative working for us in Modesto, California.
+                            You may contact him at example@email.com.
+                          </p>
+                        </div>
+                    </div>
+                  </div>
+                  <!-- question 4 -->
+                  <div class="collapsible">
+                    <button class="collapseBtn" style="background-color:#c5b358">How can I help? </button>
+                    <div class="collapseContent">
+                        <div class="text" style="background-color:#c5b358">
+                          <p>
+                            Those interested in our cause can participate by completing forms and making contributions to our wiki.
+                            You can find our series of questionnaires in this folder, most of which were created by Dillon Hayes
+                            in recent iterations of his conscience. The more information about this area is available to Dillon Hayes,
+                            the more likely that he will remember certain
+                          </p>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+            <div class="sectionable-block" style="background: rgba(234, 0, 217, 0.2);">
+              <div class="text" style="background-color:gold;">
+                  <p><b>DISCLAIMER</b><p>
+                  <p>THIS Aint a joke bla bla bla. We are not responsible for any bad things happening to our players.
+                    please abide by the rules and play respectfully!
+                  </p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- MISSION SECTION -->
+          <div class="CONTENT-CLOSED" >
+
+            <img src="https://cdn.dribbble.com/users/130163/screenshots/2869722/stasis-chamber.gif" id="chamber">
+            <button id="lightSwitch" onclick="light()">Toggle light on</button>
+            <script>
+              function light(){
+                if (document.getElementById("chamber").src == "https://cdn.dribbble.com/users/130163/screenshots/2869722/stasis-chamber.gif"){
+                  document.getElementById("chamber").src = "https://i.ytimg.com/vi/lMs_GXQiT88/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAgZA3wZ7ZgDbYkRE9DJ1xIKk6ptw";
+                  document.getElementById("lightSwitch").innerHTML = "Toggle light off";
+                }else{
+                  document.getElementById("chamber").src = "https://cdn.dribbble.com/users/130163/screenshots/2869722/stasis-chamber.gif";
+                  document.getElementById("lightSwitch").innerHTML = "Toggle light on";
+                }
+              }
+            </script>
+            <div class="sectionable-block">
+              <a href="kokuhaku.html" class="webButton">
+                <h1>ENTER KOKUHAKU</h1>
+              </a>
+            </div>
+            <div class="sectionable-block" id="statistics" style="background-color:black;">
+
+              <p id="countdown">00:00:00</p>
+              <p>until the next iteration</p>
+              <!-- home.js document.getElementById("countdown")-->
+            </div>
+
+            <div class="sectionable-block" id="calendar">
+              <h2>Calendar</h2>
+              <script type="text/javascript" src="https://stylemygcal.com/widget.js"></script>
+              <div class="smgc-calendar-placeholder" id="smgc-cal-gVdtUHgrQjPMTJyCUcm2"></div>
+            </div>
+
+
+          </div>
+
+          <!-- MEDIA SECRION -->
+          <div class="CONTENT-CLOSED">
+
+          </div>
+
+          <!-- CONTACT SECTION -->
+          <div class="CONTENT-CLOSED">
+            <div class="sectionable-block">
+              <div class="text" style="background-color:transparent; box-shadow:none;">
+                <h3>Social Media</h3>
+                <a class="webButton" href="https://www.instagram.com/d1_h85/">instagram</a>
+                <a class="webButton" href="https://www.youtube.com/channel/UCbPZMIbBZUKfLqIFL4SZ0Sw">youtube</a>
+                <a class="webButton" href="https://discord.gg/DPY5RCfy">discord</a>
+                <h3>email</h3>
+                <a class="webButton" href="mailto:systemspace.d1@gmail.com">systemspace.d1@gmail.com</a>
+                <div class="webBox">
+                  <h3>Send e-mail to someone@example.com:</h3>
+
+                  <form action="mailto:systemspace.d1@gmail.com" method="post" enctype="text/plain">
+
+                    <p>
+                      Name:<br>
+                      <input type="text" name="name"><br>
+                      E-mail:<br>
+                      <input type="text" name="mail"><br>
+                      Comment:<br>
+                      <input type="text" name="comment" size="50"><br><br>
+                      <input type="submit" value="Send">
+                      <input type="reset" value="Clear">
+                    </p>
+                  </form>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+
+          <!-- OTHER SECTION -->
+          <div class="CONTENT-CLOSED">
+
+            <div class="sectionable-block" id="iterationPlaylist">
+              <div class="text">
+                <p>
+                  hey
+                <ul>
+                  <li><a href="res/aud/music/something_we_think_is_nice.mp3">iteration 1</a></li>
+                  <li>iteration 2</li>
+                  <li>iteration 3</li>
+                  <li>iteration 4</li>
+                  <li>iteration 5</li>
+                  <li>iteration 6</li>
+                  <li>iteration 7</li>
+                  <li>iteration 8</li>
+                </ul>
+              </p>
+            </div>
+            </div>
+            <div class="sectionable-block" id="memoryPlaylist">
+
+            </div>
+          </div>
+          <div id="sidebar">
+
+              <div class="webBox">
+                <br><hr><br>
+                <a onclick="goToTab(0);">About</a><br><br>
+                <a href="news.html">&nbsp;&nbsp;&nbsp;&nbsp;→ News</a><br><br>
+                <a href="wiki.html">&nbsp;&nbsp;&nbsp;&nbsp;→ Wiki</a><br><br>
+
+                <a onclick="goToTab(1);">Mission</a><br><br>
+                <a href="kokuhaku.html">&nbsp;&nbsp;&nbsp;&nbsp;→ Terminal Kokuhaku</a><br><br>
+                <a href="iteration/0.html">&nbsp;&nbsp;&nbsp;&nbsp;→ Iteration Center</a><br><br>
+
+                <a onclick="goToTab(2);">Community</a><br><br>
+                <a href="">&nbsp;&nbsp;&nbsp;&nbsp;→ Feed</a><br><br>
+                <a href="">&nbsp;&nbsp;&nbsp;&nbsp;→ Instagram Hashtag</a><br><br>
+
+                <a onclick="goToTab(3);">Contact</a><br><br>
+                <a href="">&nbsp;&nbsp;&nbsp;&nbsp;→ Instagram</a><br><br>
+                <a href="">&nbsp;&nbsp;&nbsp;&nbsp;→ YouTube</a><br><br>
+
+                <a onclick="goToTab(4);">Other</a><br><br>
+                <a href="">&nbsp;&nbsp;&nbsp;&nbsp;→ Iterations</a><br><br>
+                <a href="">&nbsp;&nbsp;&nbsp;&nbsp;→ Memories</a><br><br>
+                <a href="">&nbsp;&nbsp;&nbsp;&nbsp;→ Music</a><br><br>
+                <br><hr><br>
+                <a href="member.html">Member</a><br><br>
+                <a href="">&nbsp;&nbsp;&nbsp;&nbsp;→ Forms</a><br><br>
+                <a href="">&nbsp;&nbsp;&nbsp;&nbsp;→ Puzzles</a><br><br>
+                <a href="">&nbsp;&nbsp;&nbsp;&nbsp;→ Map</a><br><br>
+                <hr><br>
+              </div>
+
+          </div>
+      </div>
+
+
+      <footer>
+            <hr>
+              <a href="https://github.com/RenataD1/SystemD1-Website">v1.2</a>"Present day. Present time."
+            </hr>
+        </footer>
+    </body>
+</html>
