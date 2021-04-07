@@ -138,7 +138,7 @@
                       Thank you very much!
                     </p>
                 </div>
-                <img src="http://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/16/25350/10752">
+                <img id="campus" src="http://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/16/25350/10752">
                 <div class="text" style="background-color:gold;">
                     <h2>PROJECT NEPHILIM</h2>
                     <p>Our goal as System-d1, is to reassemble the shattered soul of lost user Dillon Hayes. Upon initial
@@ -281,6 +281,24 @@
                 <a class="webButton" href="https://discord.gg/DPY5RCfy">discord</a>
                 <h3>email</h3>
                 <a class="webButton" href="mailto:systemspace.d1@gmail.com">systemspace.d1@gmail.com</a>
+                <div class="webBox">
+                  <h3>Send e-mail to someone@example.com:</h3>
+
+                  <form action="mailto:systemspace.d1@gmail.com" method="post" enctype="text/plain">
+
+                    <p>
+                      Name:<br>
+                      <input type="text" name="name"><br>
+                      E-mail:<br>
+                      <input type="text" name="mail"><br>
+                      Comment:<br>
+                      <input type="text" name="comment" size="50"><br><br>
+                      <input type="submit" value="Send">
+                      <input type="reset" value="Clear">
+                    </p>
+                  </form>
+                </div>
+
 
               </div>
             </div>
@@ -310,19 +328,42 @@
 
             </div>
           </div>
+          <div id="sidebar">
 
-      </div>
+              <div class="webBox">
+                <br><hr><br>
+                <a onclick="goToTab(0);">About</a><br><br>
+                <a href="news.html">&nbsp;&nbsp;&nbsp;&nbsp;→ News</a><br><br>
+                <a href="wiki.html">&nbsp;&nbsp;&nbsp;&nbsp;→ Wiki</a><br><br>
 
-      <div id="sidebar">
+                <a onclick="goToTab(1);">Mission</a><br><br>
+                <a href="kokuhaku.html">&nbsp;&nbsp;&nbsp;&nbsp;→ Terminal Kokuhaku</a><br><br>
+                <a href="iteration/0.html">&nbsp;&nbsp;&nbsp;&nbsp;→ Iteration Center</a><br><br>
 
-          <div class="text" style="background-color:gold;">
-              <p><b>DISCLAIMER</b><p>
-              <p>THIS Aint a joke bla bla bla. We are not responsible for any bad things happening to our players.
-                please abide by the rules and play respectfully!
-              </p>
+                <a onclick="goToTab(2);">Community</a><br><br>
+                <a href="">&nbsp;&nbsp;&nbsp;&nbsp;→ Feed</a><br><br>
+                <a href="">&nbsp;&nbsp;&nbsp;&nbsp;→ Instagram Hashtag</a><br><br>
+
+                <a onclick="goToTab(3);">Contact</a><br><br>
+                <a href="">&nbsp;&nbsp;&nbsp;&nbsp;→ Instagram</a><br><br>
+                <a href="">&nbsp;&nbsp;&nbsp;&nbsp;→ YouTube</a><br><br>
+
+                <a onclick="goToTab(4);">Other</a><br><br>
+                <a href="">&nbsp;&nbsp;&nbsp;&nbsp;→ Iterations</a><br><br>
+                <a href="">&nbsp;&nbsp;&nbsp;&nbsp;→ Memories</a><br><br>
+                <a href="">&nbsp;&nbsp;&nbsp;&nbsp;→ Music</a><br><br>
+                <br><hr><br>
+                <a href="member.html">Member</a><br><br>
+                <a href="">&nbsp;&nbsp;&nbsp;&nbsp;→ Forms</a><br><br>
+                <a href="">&nbsp;&nbsp;&nbsp;&nbsp;→ Puzzles</a><br><br>
+                <a href="">&nbsp;&nbsp;&nbsp;&nbsp;→ Map</a><br><br>
+                <hr><br>
+              </div>
+
           </div>
-
       </div>
+
+
       <footer>
             <hr>
               <a href="https://github.com/RenataD1/SystemD1-Website">v1.2</a>"Present day. Present time."
