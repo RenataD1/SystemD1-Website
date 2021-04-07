@@ -5,7 +5,11 @@
 html {
   max-height:100%;
   background-color:black;
+  overflow-x: scroll;
+}
 
+body#home-body {
+  overflow-x: scroll;
 }
 
 a {
@@ -106,9 +110,6 @@ a.nav-text{
     color:#ea00d9;
     transform: rotate(0deg);
     transition:0.1s;
-}
-#home-body {
-  overflow: scroll;
 }
 
 #main-body {
