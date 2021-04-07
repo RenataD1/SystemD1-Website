@@ -107,6 +107,9 @@ a.nav-text{
     transform: rotate(0deg);
     transition:0.1s;
 }
+#home-body {
+  overflow: scroll;
+}
 
 #main-body {
   padding:60px 0 0;
