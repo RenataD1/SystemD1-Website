@@ -8,7 +8,7 @@ html {
   overflow-x: scroll;
 }
 
-body#home-body {
+body {
   overflow-x: scroll;
 }
 
@@ -144,7 +144,7 @@ footer {
 
 }
 .CONTENT-CLOSED{
-  border:4px double white;
+  border:2px solid white;
   display:none;
   background-size:cover;
   height:100%;
@@ -283,6 +283,11 @@ ul {
     position:fixed;
     bottom:20px;
 }
+#video-player-side {
+    padding:6px 5px 5px;
+    /* position:fixed; */
+    bottom:20px;
+}
 #video-banner {
     position:absolute;
     left:136px;
@@ -308,6 +313,9 @@ ul {
     display:block;
     width:124px;
     height:68px;
+}
+#video-player-side iframe {
+  max-width: 100%;
 }
 
 .collapseBtn {
@@ -384,30 +392,39 @@ button:focus {
   border:4px double white;
 }
 input {
+
   max-width:100%;
-}
-.webButton {
+  color:white;
   font-family: 'webpixel', monospace;
+  background-color:black;
+  border:1px solid white;
+  padding:3px 5px 3px;
+}
+
+.webButton {
+
   font-family:40pt;
   display:block;
   margin:0 auto 5px;
   text-align:center;
   background-color:black;
-  border:4px double white;
+  border:1px solid white;
 
 }
 
 #chamber {
   width:100%;
-  height:20vh;
+  height:40vh;
 }
 
 #countdown {
   color:red;
   text-shadow:0 0 10px red;
-  font-size:40pt;
+  font-size:35pt;
   max-width:100%;
   display:block;
+  text-align: center;
+  overflow-wrap: break-word;
   margin:0 auto 0;
   animation:fade-in ease-out 1s;
 }
@@ -449,7 +466,7 @@ input {
     padding:3vh 5px 200px;
     display:block;
     background-color: white;
-    position: absolute;
+    position: fixed;
     right:0%;
     top:50px;
     width: 29%;
@@ -492,7 +509,9 @@ input {
     float:left;
     margin:10px 5px 10px;
   }
-
+  #video-player {
+    visibility: hidden;
+  }
 
   #logo {
     width:50%;
