@@ -328,7 +328,7 @@ ul {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-  box-shadow:3px 3px 0px #ea007f;
+  /* box-shadow:3px 3px 0px #ea007f; */
 }
 
 .active:after {
