@@ -22,6 +22,16 @@ a:hover {
   color:yellow;
 }
 
+::-webkit-scrollbar {
+  width: 2px;
+}
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+::-webkit-scrollbar-thumb {
+  background: #0abdc6;
+}
+
 .news-preview a {
   right:10px;
   position:absolute;

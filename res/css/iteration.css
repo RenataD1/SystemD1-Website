@@ -106,7 +106,8 @@ body {
     url("https://i.makeagif.com/media/7-05-2015/jmS9C-.gif");
   animation: flashing ease-out 1s;
   border: 2px solid white;
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
   height: 0em;
   resize: none;
   max-width: 95%;
@@ -114,6 +115,21 @@ body {
   border-bottom: none;
   margin: 0 auto 0;
   transition: height 0.5s ease-out;
+  /* -ms-overflow-style: none;
+  scrollbar-width: none; */
+}
+::-webkit-scrollbar {
+  width: 2px;
+}
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+::-webkit-scrollbar-thumb {
+  background: #FFFFFF;
+}
+
+#kokuhakuBox::-webkit-scrollbar {
+    /* display: none;  /* Safari and Chrome */ */
 }
 
 .opened #kokuhakuBox {
