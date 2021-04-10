@@ -6,6 +6,7 @@ html {
   max-height:100%;
   background-color:black;
   overflow-x: scroll;
+
 }
 
 body {
@@ -417,6 +418,9 @@ input {
   height:40vh;
 }
 
+#statistics p {
+  text-align: center;
+}
 #countdown {
   color:red;
   text-shadow:0 0 10px red;
@@ -461,9 +465,9 @@ input {
     border-left:4px double white;
     border-bottom:4px double white;
     background-image: linear-gradient(to bottom, rgba(235, 0, 218, 0.2), rgba(235, 0, 218, 0.2)), url("../img/miniwaSpace.png");
-    background-attachment: fixed;
+    background-attachment: absolute;
     background-size:cover;
-    padding:3vh 5px 200px;
+    padding:40px 5px 200px;
     display:block;
     background-color: white;
     position: fixed;
