@@ -465,12 +465,12 @@ input {
     border-left:4px double white;
     border-bottom:4px double white;
     background-image: linear-gradient(to bottom, rgba(235, 0, 218, 0.2), rgba(235, 0, 218, 0.2)), url("../img/miniwaSpace.png");
-    background-attachment: absolute;
+    background-attachment: fixed;
     background-size:cover;
     padding:40px 5px 200px;
     display:block;
     background-color: white;
-    position: fixed;
+    position: absolute;
     right:0%;
     top:50px;
     width: 29%;
