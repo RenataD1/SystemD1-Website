@@ -437,6 +437,24 @@ button:focus {
   margin: 0 auto 0;
 }
 
+.gallery {
+  max-height: 200px;
+}
+
+.big1 img{
+  max-height: 200px;
+  max-width: 200px;
+  object-fit: cover;
+}
+
+.small1 {
+
+}
+
+.small2 {
+
+}
+
 .webBox {
   font-family: 'webpixel', monospace;
   font-family: 40pt;
