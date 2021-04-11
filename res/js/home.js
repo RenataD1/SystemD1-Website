@@ -6,7 +6,7 @@
 
 // Tab System
 function goToTab(num){
-  window.scrollTo(0,0);
+  document.getElementById("main-body").scrollTo(0,0);
   document.getElementById("CONTENT-OPENED").removeAttribute("id");
   document.getElementsByClassName("CONTENT-CLOSED")[num].id="CONTENT-OPENED";
   // document.getElementsByClassName("CONTENT-CLOSED")[num].scrollIntoView();
@@ -28,6 +28,17 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 
+// Change video player source
+function changeVideo(url){
+  document.getElementById("video-player-side-iframe").src="";
+  document.getElementById("music-player").src=url;
+
+}
+function resetVideo(){
+  document.getElementById("video-player-side").style.visibility = "visible";
+  document.getElementById("music-player").src="";
+  document.getElementById("video-player-side-iframe").src="https://www.youtube.com/embed/Rf4jJzziJko?controls=0";
+}
 // countdown
 var today = new Date();
 var deadline = new Date('Wed Aug 18 2021 12:00:00');

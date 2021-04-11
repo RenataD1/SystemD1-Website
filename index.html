@@ -3,12 +3,13 @@
     <head>
         <title>Home</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
         <link rel="icon" href="res/img/d_logo.png"></link>
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <!-- <link href="https://fonts.googleapis.com/css2?family=VT323" rel="stylesheet"> -->
-        <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="res/css/home.css">
+        <script
+          src="https://code.jquery.com/jquery-3.6.0.js"
+          integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+          crossorigin="anonymous">
+        </script>
 
         <script src="res/js/home.js" defer></script>
         <style>
@@ -37,10 +38,11 @@
 
             </div>
             <div id="scrolling-banner">
-                <marquee id="pinkMarq">
+
+                <!-- <marquee id="pinkMarq">
                     pink marquee
-                </marquee>
-                <marquee scrollamount="8" id="whiteMarq">
+                </marquee> -->
+                <!-- <marquee scrollamount="8" id="whiteMarq">
                     white marquee
                 </marquee>
                 <script>
@@ -51,8 +53,84 @@
                       document.getElementById("whiteMarq").innerHTML+=marquee2;
 
                     }
-                </script>
+                </script> -->
 
+                <div class='slider' id="pinkMarq">
+                  <div id="overlay"></div>
+                  <!-- <div class="edge"></div> -->
+                  <ul class="slideContainer">
+                    <li class="slideItem">
+                      This will ensure that your code is being loaded after jQuery has been initialized.
+
+                    </li>
+                    <li class="slideItem">
+                      This will ensure that your code is being loaded after jQuery has been initialized.
+
+                    </li>
+                    <li class="slideItem">
+                      This will ensure that your code is being loaded after jQuery has been initialized.
+
+                    </li>
+                    <li class="slideItem">
+                      This will ensure that your code is being loaded after jQuery has been initialized.
+
+                    </li>
+
+                  </ul>
+                </div>
+                <div class='slider' id="whiteMarq">
+                  <div id="overlay"></div>
+                  <!-- <div class="edge"></div> -->
+                  <ul class="slideContainer">
+                    <li class="slideItem">
+                      This will ensure that your code is being loaded after jQuery has been initialized.
+
+                    </li>
+                    <li class="slideItem">
+                      This will ensure that your code is being loaded after jQuery has been initialized.
+
+                    </li>
+                    <li class="slideItem">
+                      This will ensure that your code is being loaded after jQuery has been initialized.
+
+                    </li>
+                    <li class="slideItem">
+                      This will ensure that your code is being loaded after jQuery has been initialized.
+
+                    </li>
+
+                  </ul>
+                </div>
+                <script>
+                  // polyfill
+                  window.requestAnimationFrame = (function()
+                  {
+                    return window.requestAnimationFrame ||
+                    window.webkitRequestAnimationFrame ||
+                    window.mozRequestAnimationFrame ||
+                    function(callback)
+                    {
+                      window.setTimeout(callback, 1000 / 60);
+                    };
+                  })();
+
+                  var speed = 8000;
+                  (function marqSlide()
+                    {
+                    var marqPairWidth = $('.slideItem:first-child').outerWidth();
+                    $(".slideContainer").animate(
+                      {
+                      marginLeft: -marqPairWidth
+                      }, speed, 'linear', function()
+                      {
+                      $(this).css(
+                        {
+                          marginLeft: 0
+                        }).find("li:last").after($(this).find("li:first"));
+                      });
+                      requestAnimationFrame(marqSlide);
+                    })();
+                </script>
 
             </div>
             <div id="nav-bar">
@@ -321,10 +399,33 @@
             <div class="sectionable-block" id="memoryPlaylist">
 
             </div>
+            <div class="sectionable-block" id="musicPlaylist">
+              <div class="text">
+                <p>
+                  hey
+                <ul>
+                  <li><a onclick="changeVideo('res/aud/music/something_we_think_is_nice.mp3')">song 1</a></li>
+                  <li><a onclick="changeVideo('res/aud/music/something_we_think_is_nice.mp3')">song 2</a></li>
+                  <li><a onclick="changeVideo('res/aud/music/something_we_think_is_nice.mp3')">song 3</a></li>
+                  <li>song 4</li>
+                  <li>song 5</li>
+                  <li>song 6</li>
+                  <li>song 7</li>
+                  <li>song 8</li>
+                </ul>
+                <a onclick="resetVideo()">reset</a>
+              </p>
+            </div>
+            </div>
+
           </div>
 
           <div id="sidebar">
-
+            <div id="video-player-side">
+                <!-- <marquee id="video-sign">DnB MUSIC 24/7</marquee> -->
+                <!-- <img id="video-banner" src="res/img/music-sign.gif"> -->
+                <iframe id="video-player-side-iframe" width="560" height="315" src="https://www.youtube.com/embed/Rf4jJzziJko?controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
               <div class="webBox" class="collapseContent">
                 <hr><br>
                 <a onclick="goToTab(0);">About</a><br><br>
@@ -354,19 +455,20 @@
                 <a href="">&nbsp;&nbsp;&nbsp;&nbsp;► Map</a><br><br>
                 <hr><br>
               </div>
-              <div id="video-player-side">
-                  <marquee id="video-sign">DnB MUSIC 24/7</marquee>
-                  <img id="video-banner" src="res/img/music-sign.gif">
-                  <iframe width="560" height="315" src="https://www.youtube.com/embed/Rf4jJzziJko?controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </div>
 
 
+              <audio
+                  id="music-player"
+                  controls
+                  autoplay>
+              </audio>
           </div>
           <div id="video-player">
               <marquee id="video-sign">DnB MUSIC 24/7</marquee>
               <img id="video-banner" src="res/img/music-sign.gif">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/Rf4jJzziJko?controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe width="124" height="68" src="https://www.youtube.com/embed/Rf4jJzziJko?controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
+
       </div>
 
 

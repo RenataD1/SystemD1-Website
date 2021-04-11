@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<head>
+
+  <title>news template</title>
+
+  <style>
+    @font-face {
+      font-family: 'VT323';
+      src: url('../res/fonts/VT323.ttf');
+    }
+
+    @font-face {
+      font-family: 'manaspc';
+      src: url('../res/fonts/manaspc.ttf');
+    }
+
+    @font-face {
+      font-family: 'webpixel';
+      src: url('../res/fonts/webpixel.otf');
+    }
+  </style>
+  <style>
+    * {
+      margin:0;
+      padding:0;
+    }
+    body {
+      padding:10px 10px 10px;
+      font-family: "VT323", monospace;
+      font-size:40pt;
+      background-color:black;
+      color:white;
+      /* text-shadow:0 0 10px white; */
+    }
+    p {
+      margin:30px 0 0;
+    }
+
+  </style>
+</head>
+
+<body>
+  <h1 id="title"></h1>
+  <h2>THE MODESTO BEE</h2>
+
+  <p>On Tuesday night, the Modesto City Council is expected to vote on 1.5 million dollar project to build a
+  bridge over Sylvan avenue in front of Enochs High School.</p>
+  <script>
+    var title = "Bridge considered at Enochs High School over safety concerns";
+    var i = 0;
+    function typeLine() {
+      if (i < title.length) {
+          document.getElementById("title").innerHTML += title.charAt(i);
+          i++;
+          setTimeout(typeLine,30);
+      }
+
+    }
+    typeLine();
+  </script>
+</body>
