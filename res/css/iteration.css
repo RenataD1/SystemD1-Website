@@ -13,16 +13,13 @@ body {
 } */
 
 #main-body {
-  margin:2em auto 0;
+  margin:25% auto 0;
   display:block;
-  /* background-color: yellow; */
   max-width: 82%;
 }
 
 .imagebox {
   border: 2px solid white;
-  /* border-left:none;
-  border-right:none; */
 }
 
 #displayBg {
@@ -38,9 +35,6 @@ body {
   display:block;
   margin:auto auto auto;
   max-width: 81%;
-  /* max-height: 100%; */
-  /* background-color: red; */
-  /* object-fit:cover; */
 
 }
 
@@ -176,8 +170,13 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
-  /* #main-body {
-    max-width: 50%;
-  } */
+  body {
+    /* overflow: hidden; */
+
+  }
+  #main-body {
+    margin:25% 40% 0;
+    /* width: 25%; */
+  }
 
 }
