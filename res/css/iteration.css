@@ -56,24 +56,6 @@ body {
   font-size: 24pt;
 }
 
-#first-marquee {
-  display: none;
-  visibility: visible;
-  position: absolute;
-  font-family: 'VT323', monospace;
-  font-size: 24pt;
-  font-style: italic;
-  color: #ea00d9;
-  transform: rotate(0deg);
-}
-
-#first-marquee:hover {
-  color: #0abdc6;
-  font-size: 30pt;
-}
-
-
-
 .buttons {
   padding: 2em 0 2em;
 }
@@ -171,12 +153,15 @@ body {
 
 @media only screen and (min-width: 768px) {
   body {
-    /* overflow: hidden; */
+    overflow: hidden;
 
   }
   #main-body {
-    margin:25% 40% 0;
-    /* width: 25%; */
+    position: absolute;
+    /* margin:2em auto 0; */
+    top:15%;
+    left:30%;
+    width: 40%;
   }
 
 }
