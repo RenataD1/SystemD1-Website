@@ -423,16 +423,18 @@ button:focus {
   width:100%;
   height:100%;
 } */
-#myForm, #myForm button {
+button {
   font-family: 'webpixel';
-}
-
-.submitBtn {
-  font-family: 'webpixel';
+  max-width: 100%;
+  color: white;
+  background-color: black;
+  border: 1px solid white;
+  padding: 3px 5px 3px;
 }
 
 #chamber {
-  width: 50%;
+  /* width: 100%; */
+  overflow: hidden;
   display: block;
   margin: 0 auto 0;
 }
@@ -483,11 +485,6 @@ input {
   border: 1px solid white;
 }
 
-#chamber {
-  width: 100%;
-  height: 40vh;
-}
-
 #statistics p {
   text-align: center;
 }
@@ -515,8 +512,11 @@ input {
 }
 
 #lightSwitch {
+  font-family: "VT323", monospace;
   display: block;
   margin: 0 auto 0;
+  background-color:#FFB000;
+  border-color: #AA7000;
 }
 
 #statistics {
@@ -593,9 +593,10 @@ input {
     margin: 0 5% 10px;
   }
 
-  .text {
-    /* max-width: 50%; */
+  #chamber {
+    width: 100%;
   }
+
   .row {
     position: relative;
     clear: both;

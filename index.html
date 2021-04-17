@@ -306,17 +306,22 @@
           <!-- MISSION SECTION -->
           <div class="CONTENT-CLOSED" >
 
-            <img src="https://cdn.dribbble.com/users/130163/screenshots/2869722/stasis-chamber.gif" id="chamber">
-            <button id="lightSwitch" onclick="light()">Toggle light on</button>
+            <img src="res/img/chamber0.png" id="chamber">
+            <button id="lightSwitch" onclick="light()">Toggle light</button>
             <script>
+              var chamberNum = 0;
               function light(){
-                if (document.getElementById("chamber").src == "https://cdn.dribbble.com/users/130163/screenshots/2869722/stasis-chamber.gif"){
-                  document.getElementById("chamber").src = "https://i.ytimg.com/vi/lMs_GXQiT88/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAgZA3wZ7ZgDbYkRE9DJ1xIKk6ptw";
-                  document.getElementById("lightSwitch").innerHTML = "Toggle light off";
-                }else{
-                  document.getElementById("chamber").src = "https://cdn.dribbble.com/users/130163/screenshots/2869722/stasis-chamber.gif";
-                  document.getElementById("lightSwitch").innerHTML = "Toggle light on";
-                }
+                chamberNum++;
+                document.getElementById("chamber").src = "res/img/chamber" + (chamberNum % 2) + ".png";
+
+                console.log(chamberNum % 2);
+                // if (document.getElementById("chamber").src == "https://cdn.dribbble.com/users/130163/screenshots/2869722/stasis-chamber.gif"){
+                //   document.getElementById("chamber").src = "res/img/chamber.png";
+                //   document.getElementById("lightSwitch").innerHTML = "Toggle light off";
+                // }else{
+                //   document.getElementById("chamber").src = "https://cdn.dribbble.com/users/130163/screenshots/2869722/stasis-chamber.gif";
+                //   document.getElementById("lightSwitch").innerHTML = "Toggle light on";
+                // }
               }
             </script>
             <div class="sectionable-block">
